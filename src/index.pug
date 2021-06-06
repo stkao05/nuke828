@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="css/style.less")
+  body
+    p Welcome to my super lame site.
+    include about.pug
+    h1 #{greeting}
+
+    ul
+      each val in tests
+        li #{val.title}
