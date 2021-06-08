@@ -1,2 +1,45 @@
+@import "./normalize.less";
+
+@c-grey: #757575;
+@c-white: #FFFFFF;
+@spacing: 25px;
+
+* {
+  box-sizing: border-box;
+}
+
 html {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0;
+}
+
+
+.section-front {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.section-questions {
+  color: @c-white;
+  background: @c-grey;
+  height: 100vh;
+  padding-top: 1px;
+
+  .intro {
+    border: 1px solid @c-white;
+    margin: @spacing;
+    padding: @spacing;
+  }
 }
