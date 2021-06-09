@@ -5,6 +5,7 @@
 @c-white: #ffffff;
 @c-black: #000000;
 @c-yellow: #ffe500;
+@c-yellow-dim: #E7CD5F;
 @spacing: 25px;
 @page-side-margin: @spacing;
 
@@ -191,6 +192,32 @@ img {
           border-bottom: 3px solid @c-yellow;
         }
       }
+    }
+  }
+}
+
+.section-knowledges {
+  background: @c-light-grey;
+  padding: @page-side-margin;
+  font-size: 15px;
+
+  ul {
+    padding: 0;
+    list-style-position: inside;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .detail {
+    .card();
+    margin-bottom: @spacing;
+    padding: @spacing;
+    background: @c-yellow-dim;
+
+    img {
+      margin-top: @spacing;
     }
   }
 }
