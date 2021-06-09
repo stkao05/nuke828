@@ -1,10 +1,12 @@
 @import "./normalize.less";
 
 @c-grey: #757575;
+@c-light-grey: #efeeef;
 @c-white: #ffffff;
 @c-black: #000000;
-@c-yellow: #FFE500;
+@c-yellow: #ffe500;
 @spacing: 25px;
+@page-side-margin: @spacing;
 
 * {
   box-sizing: border-box;
@@ -12,7 +14,6 @@
 
 html {
   font-size: 20px;
-  font-weight: bold;
   font-family: sans-serif;
   letter-spacing: 0.1em;
 }
@@ -23,6 +24,10 @@ body {
 
 p {
   line-height: 1.5em;
+}
+
+img {
+  width: 100%;
 }
 
 * {
@@ -41,12 +46,13 @@ p {
     var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
 }
 
-.round {
-
+.card {
+  border-radius: 25px;
+  .shadow();
 }
 
 .section-front {
-  background: #F9F7EF;
+  background: #f9f7ef;
 
   img {
     display: block;
@@ -59,6 +65,7 @@ p {
   color: @c-white;
   background: @c-grey;
   padding: @spacing;
+  font-weight: bold;
 
   .intro {
     border: 1px solid @c-white;
@@ -85,11 +92,55 @@ p {
       border-radius: 25px;
       margin-bottom: 1rem;
 
-      .shadow();
+      .card();
 
       input {
         display: none;
       }
+    }
+  }
+}
+
+.section-reasons {
+  background: @c-light-grey;
+  padding-bottom: @page-side-margin;
+  padding-top: 3 * @spacing;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    position: relative;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: left;
+
+    small {
+      font-size: 1rem;
+    }
+  }
+
+  img.caption {
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: -50px;
+    z-index: 10;
+  }
+
+  .card {
+    margin: 0 @page-side-margin;
+    padding: @spacing;
+
+    h2 {
+      margin: 0 0 0.5em 0;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
