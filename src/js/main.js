@@ -1,4 +1,17 @@
-var questionSlider = new Splide(document.querySelector(".question-slider"), {
+/* ------------ Generic ------------- */
+
+function toArray(nodelist) {
+  const res = [];
+  for (let node of nodelist) {
+    res.push(node);
+  }
+
+  return res;
+}
+
+/* ------------ Questions ------------- */
+
+let questionSlider = new Splide(document.querySelector(".question-slider"), {
   gap: 12,
   arrows: false,
   pagination: false,
@@ -30,16 +43,6 @@ function QuestionBox(questionBox) {
   radios.forEach((elm) => elm.addEventListener("change", handleSelect));
 }
 
-// for IE support
-function toArray(nodelist) {
-  const res = [];
-  for (let node of nodelist) {
-    res.push(node);
-  }
-
-  return res;
-}
-
 document.querySelectorAll(".question-box").forEach((elm) => QuestionBox(elm));
 
 document.querySelectorAll(".answer-detail button").forEach((elm) =>
@@ -47,3 +50,10 @@ document.querySelectorAll(".answer-detail button").forEach((elm) =>
     questionSlider.nextItem();
   })
 );
+
+/* ------------ Reasons ------------- */
+
+let reasonSlider = new Splide(document.querySelector(".reason-slider"), {
+  gap: 12,
+  arrows: true,
+}).mount();

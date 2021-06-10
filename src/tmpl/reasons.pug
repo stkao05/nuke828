@@ -6,6 +6,11 @@ section.section-reasons
   img.caption(src="../images/17sayno.svg")
   img.hero(src="../images/reasons_unfinish.png")
 
-  div.card
-    h2 核四不能用！
-    p 核四根本沒蓋好（核四底圖出現沒蓋好的樣子）：安全驗證未完成、2號機施工未完成，還需面對需重作環評、零件停產、原專案團隊解散的問題，最少需7+N年後才能使用。
+  div.splide.reason-slider
+    div.splide__track
+      ul.splide__list
+        each item in knowledges
+          li.splide__slide
+            div.card
+              h2 #{item.header}
+              p #{item.detail}
