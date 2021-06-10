@@ -1,17 +1,11 @@
-var questionSlider = new Glider(document.querySelector(".question-slider"), {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: ".dots",
-  scrollLock: true,
-  arrows: {
-    prev: ".glider-prev",
-    next: ".glider-next",
-  },
-});
+var questionSlider = new Splide(document.querySelector(".question-slider"), {
+  gap: 12,
+  arrows: false,
+  pagination: false,
+}).mount();
 
 questionSlider.nextItem = () => {
-  questionSlider.scrollItem(questionSlider.getCurrentSlide() + 1);
+  questionSlider.go(questionSlider.index + 1);
 };
 
 function QuestionBox(questionBox) {

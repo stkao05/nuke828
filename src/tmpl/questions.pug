@@ -6,39 +6,41 @@ section.section-questions
     | 看看核四是否跟你想像中的一樣！
 
 
-  div.question-slider
-    div.card.question-box(data-answer="a3")
-      div.question
-        p Q1.台灣位於地震帶，核四跟斷層的關係是？
+  div.splide.question-slider
+    div.splide__track
+      ul.splide__list
+        li.splide__slide.card.question-box(data-answer="a3")
+          div.question
+            p Q1.台灣位於地震帶，核四跟斷層的關係是？
 
-        div.option-list
-          label.button(for="q1-a1") 附近沒有斷層
-            input(type="radio", name="q1", id="q1-a1", value="a1")
-          label.button(for="q1-a2") 20公里外才有斷層
-            input(type="radio", name="q1", id="q1-a2", value="a2")
-          label.button(for="q1-a3") 斷層通過核四廠區下方
-            input(type="radio", name="q1", id="q1-a3", value="a3")
+            div.option-list
+              label.button(for="q1-a1") 附近沒有斷層
+                input(type="radio", name="q1", id="q1-a1", value="a1")
+              label.button(for="q1-a2") 20公里外才有斷層
+                input(type="radio", name="q1", id="q1-a2", value="a2")
+              label.button(for="q1-a3") 斷層通過核四廠區下方
+                input(type="radio", name="q1", id="q1-a3", value="a3")
 
-    div.card.answer-detail
-      p.button 斷層通過核四廠區下方
-      p 2013年中央地調所確認，核四廠區下方有長達2公里的S斷層通過。
+        li.splide__slide.card.answer-detail
+          p.button 斷層通過核四廠區下方
+          p 2013年中央地調所確認，核四廠區下方有長達2公里的S斷層通過。
 
-      <button>下一題</button>
+          <button>下一題</button>
 
-    div.card.question-box(data-answer="a3")
-      div.question
-        p Q2.台灣位於地震帶，核四跟斷層的關係是？
+        li.splide__slide.card.question-box(data-answer="a3")
+          div.question
+            p Q2.台灣位於地震帶，核四跟斷層的關係是？
 
-        div.option-list
-          label.button(for="q2-a1") 附近沒有斷層
-            input(type="radio", name="q2", id="q2-a1", value="a1")
-          label.button(for="q2-a2") 20公里外才有斷層
-            input(type="radio", name="q2", id="q2-a2", value="a2")
-          label.button(for="q2-a3") 斷層通過核四廠區下方
-            input(type="radio", name="q2", id="q2-a3", value="a3")
+            div.option-list
+              label.button(for="q2-a1") 附近沒有斷層
+                input(type="radio", name="q2", id="q2-a1", value="a1")
+              label.button(for="q2-a2") 20公里外才有斷層
+                input(type="radio", name="q2", id="q2-a2", value="a2")
+              label.button(for="q2-a3") 斷層通過核四廠區下方
+                input(type="radio", name="q2", id="q2-a3", value="a3")
 
-    div.card.answer-detail
-      p.button 斷層通過核四廠區下方
-      p 2013年中央地調所確認，核四廠區下方有長達2公里的S斷層通過。
+        li.splide__slide.card.answer-detail
+          p.button 斷層通過核四廠區下方
+          p 2013年中央地調所確認，核四廠區下方有長達2公里的S斷層通過。
 
-      <button>下一題</button>
+          <button>下一題</button>
