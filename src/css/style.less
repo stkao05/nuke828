@@ -11,6 +11,20 @@
 @spacing: 25px;
 @page-side-margin: @spacing;
 
+@easeInOut: cubic-bezier(0.4, 0, 0.2, 1);
+@easeOut: cubic-bezier(0, 0, 0.2, 1);
+@easeIn: cubic-bezier(0.4, 0, 1, 1);
+@sharp: cubic-bezier(0.4, 0, 0.6, 1);
+
+// Follow https://material.io/guidelines/motion/duration-easing.html#duration-easing-common-durations to learn when use what timing
+@shortest: 150ms;
+@shorter: 200ms;
+@short: 250ms;
+@standard: 300ms;
+@complex: 375ms;
+@enteringScreen: 225ms;
+@leavingScreen: 195ms;
+
 * {
   box-sizing: border-box;
 }
@@ -62,6 +76,8 @@ img {
   color: @c-black;
   border-radius: 25px;
 
+  transition: all @easeInOut @shortest;
+
   &.button-green {
     border-color: @c-green;
     background: @c-green;
@@ -97,14 +113,16 @@ img {
     margin: 0 0 @spacing;
   }
 
-  .question-box {
-    padding: 2 * @spacing @spacing;
+  .card {
     background: white;
     color: @c-black;
     width: 100%;
     min-height: 300px;
     border-radius: 20px;
+    padding: 2 * @spacing @spacing;
+  }
 
+  .question-box {
     .option-list {
       label.button {
         margin-bottom: 1rem;
@@ -115,8 +133,14 @@ img {
       }
     }
 
-    .answer {
+    .answer-detail {
       display: none;
+    }
+
+    &.show-answer-detail {
+      .question {
+        display: none;
+      }
     }
   }
 }
