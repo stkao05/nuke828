@@ -11,15 +11,16 @@ section.section-questions
     div.splide__track
       ul.splide__list
         each item, i in questions
-          li.splide__slide.card.question-box(data-answer=`a${item.answer}`)
-            div.question
+          li.splide__slide
+            div.question.card.question-box(data-answer=`a${item.answer}`)
               p Q#{i + 1}.#{item.question}
               div.option-list
                 each option, j in item.options
                   label.button(for=`q${i}-a${j}`) #{option}
                     input(type="radio", name=`q${i}`, id=`q${i}-a${j}`, value=`a${j}`)
 
-          li.splide__slide.card.answer-detail
-            p.button #{item.options[item.answer]}
-            p #{item.detail}
-            <button>下一題</button>
+          li.splide__slide
+            div.card.answer-detail
+              p.button #{item.options[item.answer]}
+              p #{item.detail}
+              <button>下一題</button>
