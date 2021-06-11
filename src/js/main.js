@@ -1,3 +1,9 @@
+import MicroModal from "micromodal";
+
+document.addEventListener("DOMContentLoaded", function () {
+  MicroModal.init();
+});
+
 /* ------------ Generic ------------- */
 
 function toArray(nodelist) {
