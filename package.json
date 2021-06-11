@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/tmpl/index.pug"
+    "dev": "parcel ./src/tmpl/index.pug --out-dir dist-dev",
+    "build": "parcel build ./src/tmpl/index.pug"
   },
   "author": "",
   "license": "ISC",
