@@ -4,12 +4,19 @@ section.section-reasons
       small 核四不該也不能重啟，因為...
 
   img.caption(src="../images/17sayno.svg")
-  img.hero(src="../images/reasons_unfinish.png")
+
+  div.hero-container(data-hero-display="0")
+    img.hero-base(src="../images/hero_base.svg")
+    img.hero-base-overlay(data-hero-index="0", src="../images/hero_outline.svg")
+    img.hero-base-overlay(data-hero-index="1", src="../images/hero_outline_land.svg")
+    img.hero-base-overlay(data-hero-index="2", src="../images/hero_outline.svg")
+    img.hero-base-overlay(data-hero-index="3", src="../images/hero_outline_land.svg")
+    img.hero-base-overlay(data-hero-index="4", src="../images/hero_outline.svg")
 
   div.splide.reason-slider
     div.splide__track
       ul.splide__list
-        each item in knowledges
+        each item, index in knowledges
           li.splide__slide
             div.card
               h2 #{item.header}

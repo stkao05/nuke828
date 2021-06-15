@@ -63,3 +63,10 @@ let reasonSlider = new Splide(document.querySelector(".reason-slider"), {
   gap: 12,
   arrows: true,
 }).mount();
+
+let heroContainer = document.querySelector(".hero-container");
+
+reasonSlider.on("moved", () => {
+  const { index } = reasonSlider;
+  heroContainer.setAttribute("data-hero-display", index);
+});

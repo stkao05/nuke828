@@ -182,6 +182,27 @@ img {
     z-index: 10;
   }
 
+  .hero-container {
+    position: relative;
+
+    .hero-base-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+
+      transition: opacity @easeIn @shorter;
+    }
+  }
+
+  [data-hero-display="0"] [data-hero-index="0"],
+  [data-hero-display="1"] [data-hero-index="1"],
+  [data-hero-display="2"] [data-hero-index="2"],
+  [data-hero-display="3"] [data-hero-index="3"],
+  [data-hero-display="3"] [data-hero-index="4"] {
+    opacity: 1;
+  }
+
   .card {
     margin: 0 @page-side-margin;
     padding: @spacing;
