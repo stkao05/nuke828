@@ -42,7 +42,7 @@ function QuestionBox(questionBox) {
 
     setTimeout(() => {
       questionSlider.nextItem();
-    }, 200);
+    }, 700);
   };
 
   const radios = toArray(questionBox.querySelectorAll("input[type=radio]"));
