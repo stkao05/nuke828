@@ -1,0 +1,81 @@
+@import "./variables.less";
+
+.section-links {
+  background: @c-yellow;
+  padding: @page-side-margin;
+}
+
+.section-links--header {
+  text-align: center;
+
+  header {
+    display: inline-block;
+    border: 4px solid white;
+    padding: 0.5 * @spacing;
+    text-align: center;
+
+    h1 {
+      margin: 0;
+    }
+
+    em {
+      font-style: normal;
+      color: @c-red;
+    }
+  }
+}
+
+.section-links--list {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+
+  li {
+    .card();
+    border-radius: 10px;
+    background: white;
+  }
+
+  li.col-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: @spacing;
+    font-weight: bold;
+
+    img {
+      display: inline-block;
+    }
+
+    .link-inner {
+      span {
+        display: block;
+        padding-bottom: 5px;
+        border-bottom: 3px solid @c-yellow;
+      }
+    }
+  }
+}
+
+@media @desktop {
+  .section-links--list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      width: 25%;
+    }
+  }
+}
