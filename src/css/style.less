@@ -1,6 +1,7 @@
 @import "./normalize.less";
 @import "./modal.less";
 @import "./variables.less";
+@import "./section-questions.less";
 @import "./section-reasons.less";
 @import "./section-links.less";
 @import "./section-knowledges.less";
@@ -107,61 +108,10 @@ h1,
   }
 }
 
-.section-questions {
-  color: @c-white;
-  background: @c-grey;
-  padding: @spacing;
-  font-weight: bold;
-
-  .section-questions--content {
-    max-width: @max-content-width;
-    margin: 0 auto;
-  }
-
-  .intro {
-    border: 1px solid @c-white;
-    padding: @spacing;
-    margin: 0 0 @spacing;
-    text-align: center;
-  }
-
-  .card {
-    background: white;
-    color: @c-black;
-    width: 100%;
-    min-height: 300px;
-    border-radius: 20px;
-    padding: 2 * @spacing @spacing;
-  }
-
-  .question-box {
-    .option-list {
-      label.button {
-        margin-bottom: 1rem;
-
-        input {
-          display: none;
-        }
-      }
-    }
-
-    .answer-detail {
-      display: none;
-    }
-
-    &.show-answer-detail {
-      .question {
-        display: none;
-      }
-    }
-  }
-}
-
 footer {
   background: @c-yellow;
-  height: 100vh;
   display: flex;
-  padding: @page-side-margin;
+  padding: 2 * @page-side-margin @page-side-margin;
   justify-content: center;
   align-items: center;
 

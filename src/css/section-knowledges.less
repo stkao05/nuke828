@@ -26,18 +26,44 @@
     margin: 0 0 @spacing 0;
   }
 
-  .detail {
+  .section-knowledges--card {
     .card();
     margin-bottom: @spacing;
     background: @c-yellow;
     overflow: hidden;
 
-    .top {
+    .section-knowledges--card-content {
       padding: @spacing;
     }
 
     img {
       display: block;
+    }
+  }
+}
+
+@media @desktop {
+  .section-knowledges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-knowledges--card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+
+    img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    h2 {
+      .h2();
+      text-align: left;
+      margin-top: 1em;
     }
   }
 }
