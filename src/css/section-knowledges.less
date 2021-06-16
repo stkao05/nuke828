@@ -1,0 +1,43 @@
+@import "./variables.less";
+
+.section-knowledges {
+  background: @c-yellow-light;
+  padding: @page-side-margin;
+  font-size: 15px;
+
+  ul {
+    font-size: 1rem;
+    padding-left: 1em;
+    list-style-position: outside;
+
+    li {
+      margin-bottom: 1em;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: @spacing;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 @spacing 0;
+  }
+
+  .detail {
+    .card();
+    margin-bottom: @spacing;
+    background: @c-yellow;
+    overflow: hidden;
+
+    .top {
+      padding: @spacing;
+    }
+
+    img {
+      display: block;
+    }
+  }
+}
