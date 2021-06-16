@@ -5,19 +5,20 @@ section.section-reasons
 
   img.caption(src="../images/17sayno.svg")
 
-  div.hero-container(data-hero-display="0")
-    img.hero-base(src="../images/hero_base.svg")
-    img.hero-base-overlay(data-hero-index="0", src="../images/hero_outline.svg")
-    img.hero-base-overlay(data-hero-index="1", src="../images/hero_outline_land.svg")
-    img.hero-base-overlay(data-hero-index="2", src="../images/hero_outline.svg")
-    img.hero-base-overlay(data-hero-index="3", src="../images/hero_outline_land.svg")
-    img.hero-base-overlay(data-hero-index="4", src="../images/hero_outline.svg")
+  div.section-reasons--content
+    div.section-reasons--hero(data-hero-display="0")
+      img.hero-base(src="../images/hero_base.svg")
+      img.hero-base-overlay(data-hero-index="0", src="../images/hero_outline.svg")
+      img.hero-base-overlay(data-hero-index="1", src="../images/hero_blackout.svg")
+      img.hero-base-overlay(data-hero-index="2", src="../images/hero_outline_land.svg")
+      img.hero-base-overlay(data-hero-index="3", src="../images/hero_waste.svg")
+      img.hero-base-overlay(data-hero-index="4", src="../images/hero_money.svg")
 
-  div.splide.reason-slider
-    div.splide__track
-      ul.splide__list
-        each item, index in knowledges
-          li.splide__slide
-            div.card
-              h2 #{item.header}
-              p #{item.detail}
+    div.splide.section-reasons--slider
+      div.splide__track
+        ul.splide__list
+          each item, index in knowledges
+            li.splide__slide
+              div.card
+                h2 #{item.header}
+                p #{item.detail}

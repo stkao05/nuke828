@@ -1,31 +1,7 @@
 @import "./normalize.less";
 @import "./modal.less";
-
-@c-grey: #757575;
-@c-light-grey: #efeeef;
-@c-white: #ffffff;
-@c-black: #000000;
-@c-yellow: #ffe500;
-@c-yellow-dim: #e7cd5f;
-@c-red: #d23521;
-@c-green: #609934;
-@spacing: 25px;
-@page-side-margin: @spacing;
-@max-content-width: 700px;
-
-@easeInOut: cubic-bezier(0.4, 0, 0.2, 1);
-@easeOut: cubic-bezier(0, 0, 0.2, 1);
-@easeIn: cubic-bezier(0.4, 0, 1, 1);
-@sharp: cubic-bezier(0.4, 0, 0.6, 1);
-
-// Follow https://material.io/guidelines/motion/duration-easing.html#duration-easing-common-durations to learn when use what timing
-@shortest: 150ms;
-@shorter: 200ms;
-@short: 250ms;
-@standard: 300ms;
-@complex: 375ms;
-@enteringScreen: 225ms;
-@leavingScreen: 195ms;
+@import "./variables.less";
+@import "./section-reasons.less";
 
 * {
   box-sizing: border-box;
@@ -155,71 +131,6 @@ img {
       .question {
         display: none;
       }
-    }
-  }
-}
-
-.section-reasons {
-  background: @c-light-grey;
-  padding-bottom: @page-side-margin;
-  padding-top: 3 * @spacing;
-  position: relative;
-
-  .header {
-    display: flex;
-    justify-content: center;
-    z-index: 20;
-    position: relative;
-  }
-
-  h1 {
-    margin: 0;
-    text-align: left;
-
-    small {
-      font-size: 1rem;
-    }
-  }
-
-  img.caption {
-    position: absolute;
-    width: 300px;
-    top: -50px;
-    left: -50px;
-    z-index: 10;
-  }
-
-  .hero-container {
-    position: relative;
-
-    .hero-base-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-
-      transition: opacity @easeIn @shorter;
-    }
-  }
-
-  [data-hero-display="0"] [data-hero-index="0"],
-  [data-hero-display="1"] [data-hero-index="1"],
-  [data-hero-display="2"] [data-hero-index="2"],
-  [data-hero-display="3"] [data-hero-index="3"],
-  [data-hero-display="3"] [data-hero-index="4"] {
-    opacity: 1;
-  }
-
-  .card {
-    margin: 0 @page-side-margin;
-    padding: @spacing;
-
-    h2 {
-      margin: 0 0 0.5em 0;
-    }
-
-    p {
-      margin: 0;
     }
   }
 }

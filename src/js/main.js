@@ -59,12 +59,12 @@ document.querySelectorAll(".answer-detail button").forEach((elm) =>
 
 /* ------------ Reasons ------------- */
 
-let reasonSlider = new Splide(document.querySelector(".reason-slider"), {
+let reasonSlider = new Splide(document.querySelector(".section-reasons--slider"), {
   gap: 12,
   arrows: true,
 }).mount();
 
-let heroContainer = document.querySelector(".hero-container");
+let heroContainer = document.querySelector(".section-reasons--hero");
 
 reasonSlider.on("moved", () => {
   const { index } = reasonSlider;

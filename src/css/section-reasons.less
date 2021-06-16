@@ -1,0 +1,117 @@
+@import "./variables.less";
+
+.section-reasons {
+  background: @c-yellow-light;
+  padding-bottom: @page-side-margin;
+  padding-top: 3 * @spacing;
+  position: relative;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    z-index: 20;
+    position: relative;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: left;
+
+    small {
+      font-size: 1rem;
+    }
+  }
+
+  img.caption {
+    position: absolute;
+    width: 300px;
+    top: -50px;
+    left: -50px;
+    z-index: 10;
+  }
+
+  .section-reasons--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-reasons--hero {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+
+    .hero-base-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+
+      transition: opacity @easeIn @shorter;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .section-reasons--slider {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  [data-hero-display="0"] [data-hero-index="0"],
+  [data-hero-display="1"] [data-hero-index="1"],
+  [data-hero-display="2"] [data-hero-index="2"],
+  [data-hero-display="3"] [data-hero-index="3"],
+  [data-hero-display="4"] [data-hero-index="4"] {
+    opacity: 1;
+  }
+
+  .card {
+    margin: 0 @page-side-margin;
+    padding: @spacing;
+
+    h2 {
+      margin: 0 0 0.5em 0;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: 800px), (orientation: landscape) {
+    & {
+      overflow: hidden;
+    }
+
+    .section-reasons--content {
+      position: relative;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .section-reasons--hero {
+      max-width: initial;
+      width: 60vw;
+      max-height: 70vh;
+      overflow: hidden;
+
+      img {
+        max-width: initial;
+        display: block;
+      }
+    }
+
+    .section-reasons--slider {
+      width: 500px;
+      position: relative;
+      left: -50px;
+      top: 10vh;
+    }
+  }
+}
+
