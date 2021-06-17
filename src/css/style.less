@@ -14,7 +14,7 @@ html {
   font-size: 18px;
   font-family: sans-serif;
   letter-spacing: 0.1em;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 @media @desktop {
@@ -62,6 +62,10 @@ h1,
 
 .h3 {
   font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .shadow {
@@ -113,6 +117,36 @@ h1,
   &:hover {
     background: black;
     color: white;
+  }
+}
+
+.button-reset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+}
+
+.button-close {
+  .button-reset();
+  color: @color-font-black;
+
+  svg {
+    display: block;
+    pointer-events: none; // workaround due to a bug in micromodal
+  }
+
+  &:hover {
+    color: @c-grey;
   }
 }
 

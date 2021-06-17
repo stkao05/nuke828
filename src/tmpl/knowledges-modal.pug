@@ -2,8 +2,9 @@ div#modal-trend.model.model-slide(aria-hidden="true")
   div.modal__overlay(tabindex="-1" data-micromodal-close)
     div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-1-title")
       header
-        h1(id="modal-1-title")
-        button(aria-label="Close modal" data-micromodal-close) close
+        h1.hidden(id="modal-1-title") 世界核能趨勢
+        button.button-close.modal__close(aria-label="關閉" data-micromodal-close)
+          include ../images/icon_close.svg
       div
         | 核電在全球發電佔比不斷下降：
         | 核能在全球發電總量的佔比從1996年17.5%的高峰，呈現逐步下降的趨勢，至2019年佔比僅剩10.35%，只比前一年增加0.2%，主要源於中國核能發電量的增加。
