@@ -1,7 +1,10 @@
 import MicroModal from "micromodal";
 
 document.addEventListener("DOMContentLoaded", function () {
-  MicroModal.init();
+  MicroModal.init({
+    disableScroll: true,
+    disableFocus: true,
+  });
 });
 
 /* ------------ Generic ------------- */
@@ -59,10 +62,13 @@ document.querySelectorAll(".answer-detail button").forEach((elm) =>
 
 /* ------------ Reasons ------------- */
 
-let reasonSlider = new Splide(document.querySelector(".section-reasons--slider"), {
-  gap: 12,
-  arrows: true,
-}).mount();
+let reasonSlider = new Splide(
+  document.querySelector(".section-reasons--slider"),
+  {
+    gap: 12,
+    arrows: true,
+  }
+).mount();
 
 let heroContainer = document.querySelector(".section-reasons--hero");
 
