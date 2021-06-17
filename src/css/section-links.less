@@ -41,9 +41,6 @@
   grid-template-columns: 1fr 1fr;
 
   li {
-    .card();
-    border-radius: 10px;
-    background: white;
   }
 
   li.col-2 {
@@ -52,18 +49,34 @@
   }
 
   a {
+    .card();
+    border-radius: 10px;
+    background: white;
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: center;
-
+    text-decoration: none;
+    color: @color-font-black;
     text-align: center;
     padding: @spacing;
     font-weight: bold;
+    border: 2px solid white;
+
+    &:hover, &:focus {
+      outline: none;
+      border-color: @c-grey;
+    }
+
+    &:active {
+      background: @c-light-grey;
+    }
 
     img {
       display: inline-block;
       width: 100px;
+      height: 70px;
+      object-fit: cover;
     }
 
     .link-inner {
