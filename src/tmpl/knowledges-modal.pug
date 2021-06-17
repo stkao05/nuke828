@@ -1,6 +1,6 @@
 div#modal-trend.modal.modal-slide(aria-hidden="true")
   div.modal__overlay(tabindex="-1" data-micromodal-close)
-  div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-1-title")
+  div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-2-title")
     header
       h1.hidden(id="modal-1-title") 世界核能趨勢
       button.button-close.modal__close(aria-label="關閉" data-micromodal-close)
@@ -16,3 +16,31 @@ div#modal-trend.modal.modal-slide(aria-hidden="true")
       p 非水力再生能源在2019年時貢獻了全球10.39%的發電量，首度超越核電的10.35%。而以新增發電量來看，2019年時全球非水力再生能源新增的裝置容量達到184GW，創下歷史新高，其中風力發電量新增59.2GW，年增率為13%，太陽光電新增了98GW發電量，年增率為24%，相較之下，核能發電的淨成長僅為2.4GW，年增率為3.7%，且有一半來自於中國。
       p
         a(href="https://www.worldnuclearreport.org/-World-Nuclear-Industry-Status-Report-2020-.html") 參考資料來源：《2020世界核能產業現狀報告》(The World Nuclear Industry Status Report 2020)　
+
+
+div#modal-pollution.modal.modal-slide(aria-hidden="true")
+  div.modal__overlay(tabindex="-1" data-micromodal-close)
+  div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-2-title")
+    header
+      h1.hidden(id="modal-2-title") 缺電與空污
+      button.button-close.modal__close(aria-label="關閉" data-micromodal-close)
+        include ../images/icon_close.svg
+    div
+      h2.h3 核四7+N年內都不可能發電，更不可能減污減碳
+      p 核四如果要重啟，必須重新申請建照、重做環差、找零件、找廠商，還必須因應新發現的S斷層，重作耐震安全設計，必須符合福島核災後，更嚴格的國際核安標準。 經濟部預估還要7+N年、追加800億元，原能會估計至少要等10年。 簡言之，就算今年公投通過重啟核四，未來10年內核四也不可能發電，更不可能減污減碳。 
+      p
+        a(href="https://www.aec.gov.tw/share/file/regulation/Aescx996wXYPrJqNEixEHw__.pdf") 延伸閱讀：原能會網站
+      h2.h3 核四就算運轉，對減污減碳的貢獻也很低
+      p 核四就算可以運轉，每年每部機組最多發出50億度電，約占全台電力不到3%。換算減碳量不到2%，硫氧化物不到3%，總懸浮微粒、氮氧化物、揮發性有機物更是減不到1%。續蓋核四花800億，減污減碳效果這麼少，不如拿來補貼節能設備、發展再生能源，減污減碳的效果還更好。
+      p
+        a(href="https://docs.google.com/document/d/1e9GbLsg9wdirYnCYkE4z_4-vDdVVQGJ8SyVq5mMZtcU/edit") 延伸閱讀：核四對減污減碳貢獻不大
+      h2.h3 不要在爛蘋果中選一個，核四與燃煤都該被淘汰
+      p 想用核四取代燃煤，就像醫生叫病人多吃有營養的東西，但病人卻在猶豫要吃餅乾還是糖果一樣荒謬。核四與燃煤都是要被淘汰的東西。加入RE100聯盟、需要100%再生能源的台積電、蘋果、google等企業，也不會對核電買單。沒什麼好猶豫的了，我們有更好的選擇。
+      h2.h3 停電不是電廠蓋不夠，是調度管理出問題
+      p 513停電的原因：人為操作疏失，導致電網斷開，電送不出來。 517停電的原因：低估用電需求、電力調度管理失當、電廠歲修排程預估失誤，加上核煤機組失靈，導致電力供不應求。 若不解決輸配端的調度管理問題，就算重啟核四，一樣可能會停電！ 
+      p
+        a(href="https://www.twreporter.org/a/opinion-2021-may-power-cut") 延伸閱讀：不要再有下一次停電，我們該做什麼？
+      h2.h3 核四救不了停電，反而讓停電風險更高
+      p 萬一核四供電期間突然故障，或電網事故導致核四急停跳脫，台灣面臨的風險，恐怕就不只是分區限電一天的問題了。一來可能有核安問題，二來核反應爐從啟動到滿載至少要3天才能恢復供電，反而增加停電時間延長及提高系統負擔的風險，讓供電更不可靠好嗎？
+      p
+        a(href="https://pansci.asia/archives/146001") 延伸閱讀：815全台大停電，你搞清楚發生什麼事了嗎？
