@@ -58,6 +58,17 @@
   .section-reasons--slider {
     width: 100%;
     max-width: 500px;
+
+    @arrow-width: 40px;
+    padding: 0 @arrow-width;
+
+    .splide__arrow--prev { 
+      left: 0;
+    }
+
+    .splide__arrow--next { 
+      right: 0;
+    }
   }
 
   [data-hero-display="0"] [data-hero-index="0"],
