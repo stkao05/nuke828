@@ -1,9 +1,51 @@
 .section-front {
   background: #f9f7ef;
+  height: 100vh;
+  position: relative;
 
   img {
     display: block;
-    height: 100vh;
-    margin: 0 auto;
+  }
+}
+
+.section-front--header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.section-front--base {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100vw;
+}
+
+.section-front--bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  svg {
+    width: 100px;
+  }
+
+  h1 {
+    display: flex;
+    align-items: stretch;
+
+    .date {
+      color: @c-grey;
+    }
   }
 }

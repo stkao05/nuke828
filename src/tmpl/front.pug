@@ -1,5 +1,16 @@
 section.section-front
   
-  include ../images/front_base.svg
-  include ../images/front_title.svg
-  include ../images/front_number.svg
+  div.section-front--base
+    include ../images/front_base.svg
+
+  div.section-front--header
+    div.title-bg
+      include ../images/front_title_bg.svg
+    div.title
+      include ../images/front_title.svg
+
+  div.section-front--bottom
+    include ../images/front_number.svg
+    h1 
+      span.date 8/28
+      span.title 重啟核四公投<br/>請投不同意票
