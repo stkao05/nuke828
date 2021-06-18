@@ -6,6 +6,7 @@
 @import "./section-reasons.less";
 @import "./section-links.less";
 @import "./section-knowledges.less";
+@import "./section-footer.less";
 
 * {
   box-sizing: border-box;
@@ -64,6 +65,10 @@ h1,
 .h3 {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.f-sm {
+  font-size: 15px;
 }
 
 a {
@@ -163,20 +168,5 @@ a {
 
   &:hover {
     color: @c-grey;
-  }
-}
-
-footer {
-  padding: @page-top-margin @page-side-margin;
-  background: @c-yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .label {
-    font-weight: bold;
-  }
-
-  .content {
   }
 }
