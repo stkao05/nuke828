@@ -20,6 +20,20 @@
     top: 0;
     left: 0;
   }
+
+  #title-letter-1 {
+    animation: 1s steps(2, end) 0s infinite moving-letter;
+  }
+}
+
+@keyframes moving-letter {
+  from {
+    /*transform: scale(0, 0)*/
+  }
+  to {
+    transform: scale(1.1, 1.1);
+    transform-origin: center;
+  }
 }
 
 .section-front--base {
