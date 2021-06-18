@@ -102,7 +102,7 @@ a {
 .button {
   display: block;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.5em 0;
   border: 4px solid @c-yellow;
   color: @c-black;
   border-radius: 25px;
@@ -129,7 +129,7 @@ a {
 .button-black {
   background: none;
   border: 3px solid black;
-  padding: 0.5em 1em;
+  padding: 0.25em 1em;
   border-radius: 20px;
   cursor: pointer;
 
@@ -169,4 +169,8 @@ a {
   &:hover {
     color: @c-grey;
   }
+}
+
+.splide__pagination__page.is-active {
+  background-color: rgba(0, 0, 0, 0.5);
 }

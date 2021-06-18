@@ -10,6 +10,8 @@ section.section-questions
     div.splide.question-slider
       div.splide__track
         ul.splide__list
+
+          - lastIndex = questions.length - 1
           each item, i in questions
             li.splide__slide
               div.question.card.question-box(data-answer=`a${item.answer}`)
@@ -23,4 +25,6 @@ section.section-questions
               div.card.answer-detail
                 p.button #{item.options[item.answer]}
                 p #{item.detail}
-                <button>下一題</button>
+                if i !== lastIndex
+                  div.btn-holder
+                    button.button-black 下一題
