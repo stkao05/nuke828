@@ -101,16 +101,19 @@
   .hand-top-right {
     top: 0;
     right: 0;
+    animation-name: moving-hand-top-right;
   }
 
   .hand-bottom-left {
     bottom: 0;
     left: 0;
+    animation-name: moving-hand-bottom-left;
   }
 
   .hand-bottom-right {
     bottom: 0;
     right: 0;
+    animation-name: moving-hand-bottom-right;
   }
 }
 
@@ -119,18 +122,34 @@
     transform: translate(-10px, -10px) rotate(10deg);
   }
 
-  33% {
-  }
-
-  66% {
-  }
-
   to {
     transform: translate(30px, 30px) rotate(40deg);
     transform-origin: center;
     /*transform-box: fill-box;*/
   }
 }
+
+@keyframes moving-hand-bottom-left {
+  0% {
+    transform: translate(-20px, 100px);
+  }
+
+  to {
+    transform: translate(20px, 20px) rotate(20deg);
+    transform-origin: center;
+  }
+}
+
+/*@keyframes moving-hand-top-right {*/
+/*0% {*/
+/*transform: translate(-20px, 100px) ;*/
+/*}*/
+
+/*to {*/
+/*transform: translate(20px, 20px) rotate(20deg);*/
+/*transform-origin: center;*/
+/*}*/
+/*}*/
 
 .section-front--bottom {
   position: absolute;
