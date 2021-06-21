@@ -10,9 +10,10 @@
 
 .section-front--header {
   position: absolute;
-  top: 0;
+  top: 5vh;
   left: 0;
   width: 100%;
+  z-index: 10;
 
   svg {
     width: 100%;
@@ -21,17 +22,34 @@
     left: 0;
   }
 
-  #title-letter-1 {
-    animation: 1s steps(2, end) 0s infinite moving-letter;
+  #letter-1 {
+    animation: 1s steps(2, end) 0s infinite moving-letter-1;
+  }
+  #letter-2 {
+    animation: 1s steps(2, end) 0s infinite moving-letter-2;
+  }
+  #letter-3 {
+    animation: 1s steps(2, end) 0s infinite moving-letter-3;
   }
 }
 
-@keyframes moving-letter {
-  from {
-    /*transform: scale(0, 0)*/
-  }
+@keyframes moving-letter-1 {
   to {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.02);
+    transform-origin: center;
+  }
+}
+
+@keyframes moving-letter-2 {
+  to {
+    transform: rotate(-0.02turn);
+    transform-origin: center;
+  }
+}
+
+@keyframes moving-letter-3 {
+  to {
+    transform: rotate(0.06turn);
     transform-origin: center;
   }
 }
@@ -41,6 +59,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 20;
 
   width: 100vw;
 }
@@ -60,6 +79,41 @@
 
     .date {
       color: @c-grey;
+    }
+  }
+}
+
+@media @desktop {
+  .section-front {
+    padding: @spacing;
+  }
+
+  .section-front--header {
+    top: @spacing;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50vw;
+    z-index: 10;
+  }
+
+  .section-front--base {
+    position: absolute;
+    top: 50%;
+    left: initial;
+    right: @spacing;
+    transform: translate(0, -40%);
+    z-index: 20;
+    width: 60vw;
+  }
+
+  .section-front--bottom {
+    position: absolute;
+    bottom: @spacing;
+    left: @spacing;
+    right: initial;
+
+    h1 {
+      font-size: 50px;
     }
   }
 }
