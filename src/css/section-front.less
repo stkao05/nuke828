@@ -10,7 +10,7 @@
 
 .section-front--header {
   position: absolute;
-  top: 5vh;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -31,26 +31,40 @@
   #letter-3 {
     animation: 1s steps(2, end) 0s infinite moving-letter-3;
   }
+  #letter-4 {
+    animation: 1s steps(2, end) 0s infinite moving-letter-4;
+  }
 }
 
 @keyframes moving-letter-1 {
   to {
     transform: scale(1.05, 1.02);
     transform-origin: center;
+    transform-box: fill-box;
   }
 }
 
 @keyframes moving-letter-2 {
   to {
-    transform: rotate(-0.02turn);
+    transform: rotate(5deg) scale(1.05, 1.02);
     transform-origin: center;
+    transform-box: fill-box;
   }
 }
 
 @keyframes moving-letter-3 {
   to {
-    transform: rotate(0.06turn);
+    transform: rotate(-4deg);
     transform-origin: center;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes moving-letter-4 {
+  to {
+    transform: rotate(-15deg);
+    transform-origin: center;
+    transform-box: fill-box;
   }
 }
 
