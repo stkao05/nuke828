@@ -4,6 +4,7 @@
   background: @c-yellow-light;
   padding: @page-top-margin 0;
   position: relative;
+  min-height: 100vh;
 
   .header {
     display: flex;
@@ -21,24 +22,11 @@
     }
   }
 
-  img.caption {
-    position: absolute;
-    width: 300px;
-    top: -50px;
-    left: -50px;
-    z-index: 10;
-  }
-
-  .section-reasons--content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .section-reasons--hero {
-    position: relative;
     max-width: 500px;
     width: 100%;
+    z-index: 10;
+    position: relative;
 
     .hero-base-overlay {
       position: absolute;
@@ -58,9 +46,7 @@
   .section-reasons--slider {
     width: 100%;
     max-width: 500px;
-
-    @arrow-width: 40px;
-    padding: 0 @arrow-width;
+    z-index: 20;
 
     .splide__arrow--prev {
       left: 0;
@@ -68,6 +54,18 @@
 
     .splide__arrow--next {
       right: 0;
+    }
+    .card {
+      margin: 0 @page-side-margin;
+      padding: @spacing;
+
+      h2 {
+        margin: 0 0 0.5em 0;
+      }
+
+      p {
+        margin: 0;
+      }
     }
   }
 
@@ -78,18 +76,10 @@
   [data-hero-display="4"] [data-hero-index="4"] {
     opacity: 1;
   }
+}
 
-  .card {
-    margin: 0 @page-side-margin;
-    padding: @spacing;
-
-    h2 {
-      margin: 0 0 0.5em 0;
-    }
-
-    p {
-      margin: 0;
-    }
+@media (orientation: landscape) {
+  .section-reasons {
   }
 }
 
@@ -108,10 +98,17 @@
       align-items: flex-start;
     }
 
+    @slider-width: 500px;
+
     .section-reasons--hero {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -25%);
+
       max-width: initial;
-      width: 60vw;
-      max-height: 70vh;
+      width: calc(100vw - @slider-width - @spacing);
+      min-width: 700px;
       overflow: hidden;
 
       img {
@@ -121,10 +118,12 @@
     }
 
     .section-reasons--slider {
-      width: 500px;
-      position: relative;
-      left: -50px;
-      top: 10vh;
+      position: absolute;
+      top: 50%;
+      right: @spacing;
+      transform: translate(0, -50%);
+      width: @slider-width;
+      padding: 0 40px; // arrow width
     }
   }
 }
