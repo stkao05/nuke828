@@ -17,7 +17,7 @@
     text-align: left;
 
     small {
-      font-size: 0.75em;
+      font-size: 0.5em;
     }
   }
 
@@ -62,11 +62,11 @@
     @arrow-width: 40px;
     padding: 0 @arrow-width;
 
-    .splide__arrow--prev { 
+    .splide__arrow--prev {
       left: 0;
     }
 
-    .splide__arrow--next { 
+    .splide__arrow--next {
       right: 0;
     }
   }
@@ -91,10 +91,14 @@
       margin: 0;
     }
   }
+}
 
-  @media (min-width: 800px), (orientation: landscape) {
-    & {
-      overflow: hidden;
+@media (min-width: 800px), (orientation: landscape) {
+  .section-reasons {
+    overflow: hidden;
+
+    h1 {
+      font-size: 3.5rem;
     }
 
     .section-reasons--content {
