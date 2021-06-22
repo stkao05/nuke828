@@ -1,4 +1,5 @@
 import MicroModal from "micromodal";
+import "./splide.min";
 
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({
