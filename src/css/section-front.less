@@ -1,11 +1,12 @@
-@z-index-title: 10;
-@z-index-hand: 20;
-@z-index-base: 30;
-@z-index-bottom-title: 40;
+@z-index-title: 100;
+@z-index-bottom-title: 100;
+@z-index-hand: 50;
+@z-index-base: 40;
+@z-index-title-bg: 30;
 
 .section-front {
   background: #f9f7ef;
-  height: 100vh;
+  height: calc(100vh - 25px);
   position: relative;
   overflow: hidden;
 
@@ -14,47 +15,48 @@
   }
 }
 
-.section-front--header {
+.section-front-title {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: @z-index-title;
+}
 
-  svg {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.section-front-title-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: @z-index-title-bg;
+}
 
-  #letter-1 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-1;
-  }
-  #letter-2 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-2;
-  }
-  #letter-3 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-3;
-  }
-  #letter-4 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-4;
-  }
-  #letter-5 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-5;
-  }
-  #letter-6 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-6;
-  }
-  #letter-7 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-7;
-  }
-  #letter-8 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-8;
-  }
-  #letter-9 {
-    animation: 1s steps(2, end) 0s infinite moving-letter-9;
-  }
+#letter-1 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-1;
+}
+#letter-2 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-2;
+}
+#letter-3 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-3;
+}
+#letter-4 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-4;
+}
+#letter-5 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-5;
+}
+#letter-6 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-6;
+}
+#letter-7 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-7;
+}
+#letter-8 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-8;
+}
+#letter-9 {
+  animation: 1s steps(2, end) 0s infinite moving-letter-9;
 }
 
 @keyframes moving-letter-1 {
@@ -263,44 +265,45 @@
 @media @desktop {
   .section-front {
     padding: @spacing;
-  }
 
-  .section-front--header {
-    top: @spacing;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 65vw;
-  }
-
-  .section-front--base {
-    position: absolute;
-    top: 50%;
-    left: initial;
-    right: @spacing;
-    transform: translate(0, -40%);
-    width: 60vw;
-
-    .hand-top-left {
-      display: none;
+    .section-front-title,
+    .section-front-title-bg {
+      top: @spacing;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 65vw;
     }
-  }
 
-  .section-front--bottom {
-    position: absolute;
-    bottom: 2 * @spacing;
-    left: 2 * @spacing;
-    right: initial;
+    .section-front--base {
+      position: absolute;
+      top: 50%;
+      left: initial;
+      right: @spacing;
+      transform: translate(0, -40%);
+      width: 60vw;
 
-    h1 {
-      font-size: 55px;
-
-      .date-upright {
+      .hand-top-left {
         display: none;
       }
+    }
 
-      .date-flat {
-        display: block;
-        color: @c-grey;
+    .section-front--bottom {
+      position: absolute;
+      bottom: 2 * @spacing;
+      left: 2 * @spacing;
+      right: initial;
+
+      h1 {
+        font-size: 55px;
+
+        .date-upright {
+          display: none;
+        }
+
+        .date-flat {
+          display: block;
+          color: @c-grey;
+        }
       }
     }
   }
