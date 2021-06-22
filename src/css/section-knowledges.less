@@ -36,8 +36,10 @@
       padding: @spacing;
     }
 
-    img {
-      display: block;
+    .img-container {
+      img {
+        display: block;
+      }
     }
 
     &:last-child {
@@ -63,9 +65,13 @@
     width: 100%;
     max-width: 900px;
 
-    img {
+    .img-container {
       width: 50%;
-      object-fit: cover;
+
+      img {
+        object-fit: cover;
+        min-height: 100%;
+      }
     }
 
     h2 {
