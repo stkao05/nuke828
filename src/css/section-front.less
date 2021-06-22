@@ -1,11 +1,13 @@
 @z-index-title: 10;
 @z-index-hand: 20;
 @z-index-base: 30;
+@z-index-bottom-title: 40;
 
 .section-front {
   background: #f9f7ef;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   img {
     display: block;
@@ -127,8 +129,6 @@
   }
 }
 
-
-
 .section-front--base {
   position: absolute;
   top: 50%;
@@ -219,19 +219,43 @@
 
 .section-front--bottom {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: @spacing;
+  right: @spacing;
+  z-index: @z-index-bottom-title;
 
-  svg {
-    width: 100px;
+  .vote-number {
   }
 
   h1 {
     display: flex;
-    align-items: stretch;
+    align-items: flex-end;
+    margin: 0;
 
-    .date {
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .vote-number {
+      display: block;
+      width: 70px;
+      margin-bottom: 5px;
+
+      svg {
+        display: block;
+      }
+    }
+
+    .date-flat {
+      display: none;
+    }
+
+    .date-upright {
+      width: 50px;
       color: @c-grey;
+      margin-right: 8px;
+      display: inline-block;
     }
   }
 }
@@ -245,7 +269,7 @@
     top: @spacing;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 50vw;
+    width: 65vw;
   }
 
   .section-front--base {
@@ -263,12 +287,21 @@
 
   .section-front--bottom {
     position: absolute;
-    bottom: @spacing;
-    left: @spacing;
+    bottom: 2 * @spacing;
+    left: 2 * @spacing;
     right: initial;
 
     h1 {
-      font-size: 50px;
+      font-size: 55px;
+
+      .date-upright {
+        display: none;
+      }
+
+      .date-flat {
+        display: block;
+        color: @c-grey;
+      }
     }
   }
 }

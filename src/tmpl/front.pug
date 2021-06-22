@@ -18,7 +18,11 @@ section.section-front
       include ../images/front_title.svg
 
   div.section-front--bottom
-    include ../images/front_number.svg
-    h1 
-      span.date 8/28
-      span.title 重啟核四公投<br/>請投不同意票
+    h1
+      span.date-upright
+        include ../images/front_date.svg
+      span.title 
+        span.vote-number
+          include ../images/front_number.svg
+        span.date-flat 8/28
+        span.words 重啟核四公投<br/>請投不同意票
