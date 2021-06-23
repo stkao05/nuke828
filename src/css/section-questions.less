@@ -34,10 +34,19 @@
   .question-box {
     .option-list {
       label.button {
+        position: relative;
         margin-bottom: 1rem;
 
         input {
           display: none;
+        }
+
+        img {
+          height: 1em;
+          position: absolute;
+          left: 1em;
+          top: 50%;
+          transform: translate(0, -50%);
         }
       }
     }
