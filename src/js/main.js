@@ -1,5 +1,6 @@
 import MicroModal from "micromodal";
 import "./splide.min";
+import "@stkao05/layout-grid";
 
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({

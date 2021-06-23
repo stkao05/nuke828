@@ -15,6 +15,7 @@
     "pug": "^3.0.2"
   },
   "dependencies": {
+    "@stkao05/layout-grid": "^0.0.2",
     "micromodal": "^0.4.6"
   }
 }
