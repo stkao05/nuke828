@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ main, gh-action ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, gh-action ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -39,3 +39,19 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: "15.14.0"
+
+      - name: Install Node.js dependencies 
+        run: npm install
+
+      - name: Build page 
+        run: npm run build
+        
+      - name: Commit build to gh-page branch
+        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
+        with:
+          # The arguments for the `git add` command (see the paragraph below for more info)
+          add: 'docs'
+          branch: gh-page
+          message: 'Built from the gp-page-build Github action'
+          pull_strategy: 'NO-PULL'
+          push: 'origin gh-page --force'
