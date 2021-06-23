@@ -237,6 +237,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
     }
 
     .vote-number {
@@ -246,6 +247,10 @@
 
       svg {
         display: block;
+      }
+
+      #vote-number-circle {
+        animation: 1s steps(2, jump-none) 0s infinite flashing-number;
       }
     }
 
@@ -259,6 +264,15 @@
       margin-right: 8px;
       display: inline-block;
     }
+  }
+}
+
+@keyframes flashing-number {
+  0% {
+    fill: black;
+  }
+  to {
+    fill: @c-yellow;
   }
 }
 
