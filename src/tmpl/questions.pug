@@ -19,9 +19,9 @@ section.section-questions
                   each option, j in item.options
                     label.button(for=`q${i}-a${j}`)
                       if j === item.answer
-                        img(src="../images/question_yes.svg")
+                        img(src="../images/question_yes.svg", width="21", height="22")
                       else
-                        img(src="../images/question_no.svg")
+                        img(src="../images/question_no.svg", width="18", height="17")
                       | #{option}
                       input(type="radio", name=`q${i}`, id=`q${i}-a${j}`, value=`a${j}`)
 
