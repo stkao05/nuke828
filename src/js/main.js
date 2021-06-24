@@ -1,6 +1,7 @@
 import MicroModal from "micromodal";
 import "./splide.min";
 import "@stkao05/layout-grid";
+import { mountQuestionSection } from "./section-question";
 
 document.addEventListener("DOMContentLoaded", function () {
   MicroModal.init({
@@ -22,45 +23,7 @@ function toArray(nodelist) {
 
 /* ------------ Questions ------------- */
 
-let questionSlider = new Splide(document.querySelector(".question-slider"), {
-  gap: 12,
-  arrows: false,
-  pagination: false,
-}).mount();
-
-questionSlider.nextItem = () => {
-  questionSlider.go(questionSlider.index + 1);
-};
-
-function QuestionBox(questionBox) {
-  const answer = questionBox.getAttribute("data-answer");
-
-  const handleSelect = (event) => {
-    const correctOption = questionBox.querySelector(`input[value=${answer}]`)
-      .parentElement;
-
-    correctOption.classList.add("button-green");
-
-    if (event.target.value !== answer) {
-      event.target.parentElement.classList.add("button-red");
-    }
-
-    setTimeout(() => {
-      questionSlider.nextItem();
-    }, 700);
-  };
-
-  const radios = toArray(questionBox.querySelectorAll("input[type=radio]"));
-  radios.forEach((elm) => elm.addEventListener("change", handleSelect));
-}
-
-document.querySelectorAll(".question-box").forEach((elm) => QuestionBox(elm));
-
-document.querySelectorAll(".answer-detail button").forEach((elm) =>
-  elm.addEventListener("click", () => {
-    questionSlider.nextItem();
-  })
-);
+mountQuestionSection();
 
 /* ------------ Reasons ------------- */
 
