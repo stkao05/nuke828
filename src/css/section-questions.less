@@ -51,6 +51,7 @@
           left: 1em;
           top: 50%;
           transform: translate(0, -50%);
+          display: none;
         }
       }
     }
@@ -75,5 +76,15 @@
 @media @wide {
   .section-questions .card {
     padding: 2 * @spacing;
+  }
+
+  .section-questions {
+    .question-box {
+      .option-list label.button {
+        img {
+          display: block;
+        }
+      }
+    }
   }
 }
