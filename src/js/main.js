@@ -10,17 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* ------------ Generic ------------- */
-
-function toArray(nodelist) {
-  const res = [];
-  for (let node of nodelist) {
-    res.push(node);
-  }
-
-  return res;
-}
-
 /* ------------ Questions ------------- */
 
 mountQuestionSection();

@@ -1,11 +1,37 @@
 let slider;
 
 function mountSlider() {
-  slider = new Splide(document.querySelector(".question-slider"), {
+  const sliderElm = document.querySelector(".question-slider");
+
+  slider = new Splide(sliderElm, {
     gap: 12,
     arrows: false,
     pagination: false,
   }).mount();
+
+  // focus control: only allow focus of active slide
+  const nextButtons = sliderElm.querySelectorAll(".button-next-quetion");
+  const optionItems = sliderElm.querySelectorAll(".option-list-item");
+
+  slider.on("active", (data) => {
+    const activeSlide = data.slide;
+
+    nextButtons.forEach((button) => {
+      button.setAttribute("tabindex", "-1");
+    });
+
+    const nextBtn = activeSlide.querySelector(".button-next-quetion");
+    if (nextBtn) {
+      nextBtn.setAttribute("tabindex", "0");
+    }
+
+    optionItems.forEach((item) => {
+      item.setAttribute("tabindex", "-1");
+    });
+    activeSlide.querySelectorAll(".option-list-item").forEach((item) => {
+      item.setAttribute("tabindex", "0");
+    });
+  });
 }
 
 function forwardSlider() {

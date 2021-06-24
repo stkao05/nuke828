@@ -17,7 +17,7 @@ section.section-questions
                 p.question.regular-bold Q#{i + 1}.#{item.question}
                 div.option-list
                   each option, j in item.options
-                    label.button.regular-bold(for=`q${i}-a${j}`)
+                    label.option-list-item.button.regular-bold(for=`q${i}-a${j}`)
                       if j === item.answer
                         img(src="../images/question_yes.svg", width="21", height="22")
                       else
@@ -31,4 +31,4 @@ section.section-questions
                 p.regular-bold #{item.detail}
                 if i !== lastIndex
                   div.btn-holder
-                    button.regular-bold.button-black 下一題
+                    button.button-next-quetion.regular-bold.button-black 下一題
