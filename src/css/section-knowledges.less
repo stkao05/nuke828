@@ -45,10 +45,10 @@
       margin-bottom: 0;
     }
   }
-}
 
-.button-container {
-  text-align: right;
+  .button-container {
+    text-align: right;
+  }
 }
 
 @media @desktop {
@@ -56,26 +56,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .section-knowledges--card {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 900px;
+    .section-knowledges--card {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 900px;
 
-    .img-container {
-      width: 50%;
+      .section-knowledges--card-content {
+        padding: 1.5 * @spacing 2 * @spacing;
+      }
 
-      img {
-        object-fit: cover;
-        min-height: 100%;
+      .img-container {
+        width: 50%;
+
+        img {
+          object-fit: cover;
+          min-height: 100%;
+        }
+      }
+
+      h2 {
+        .h2();
+        text-align: left;
       }
     }
 
-    h2 {
-      .h2();
-      text-align: left;
+    .button-container {
+      margin-top: 1.5 * @spacing;
     }
   }
 }

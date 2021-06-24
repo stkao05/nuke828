@@ -4,7 +4,6 @@
   background: @c-yellow-light;
   padding: @page-top-margin 0;
   position: relative;
-  min-height: 100vh;
 
   .header {
     display: flex;
@@ -90,6 +89,7 @@
 @media (min-width: 800px), (orientation: landscape) {
   .section-reasons {
     overflow: hidden;
+    min-height: 100vh;
 
     .section-reasons--content {
       position: relative;
@@ -126,7 +126,7 @@
       padding: 0 40px; // arrow width
 
       .card {
-        padding: 1.5 * @spacing 2 * @spacing;
+        padding: 1.25 * @spacing 2 * @spacing;
       }
     }
   }
