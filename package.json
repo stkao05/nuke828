@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./src/tmpl/index.pug --out-dir dist-dev",
-    "build": "parcel build ./src/tmpl/index.pug --out-dir docs"
+    "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
+    "subfont": "subfont ./docs/index.html -o ./docs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "less": "^4.1.1",
     "parcel-bundler": "^1.12.5",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "subfont": "^6.1.0"
   },
   "dependencies": {
     "@stkao05/layout-grid": "^0.0.2",
