@@ -199,6 +199,12 @@ a {
   }
 }
 
-.splide__pagination__page.is-active {
-  background-color: rgba(0, 0, 0, 0.5);
+.splide__pagination__page {
+  &:focus {
+    outline: 2px solid @c-grey;
+  }
+
+  &.is-active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
