@@ -1,3 +1,5 @@
+import "./splide.min";
+
 let slider;
 
 function mountSlider() {
@@ -81,7 +83,7 @@ function mountAnswerBox() {
   );
 }
 
-export function mountQuestionSection() {
+export function mountSectionQuestion() {
   mountSlider();
   mountQuestionBox();
   mountAnswerBox();
