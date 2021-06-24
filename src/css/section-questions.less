@@ -3,7 +3,7 @@
 .section-questions {
   color: @c-white;
   background: @c-grey;
-  padding: @spacing;
+  padding: @page-top-margin @page-side-margin;
   display: flex;
   align-items: center;
   min-height: 90vh;
@@ -27,12 +27,13 @@
     width: 100%;
     min-height: 300px;
     border-radius: 20px;
-    padding: 2 * @spacing @spacing;
+    padding: @page-top-margin @page-side-margin;
   }
 
   .question-box {
     .question {
       text-align: center;
+      margin: 0 0 @spacing 0;
     }
 
     .option-list {
@@ -68,5 +69,11 @@
   .btn-holder {
     display: flex;
     justify-content: flex-end;
+  }
+}
+
+@media @wide {
+  .section-questions .card {
+    padding: 2 * @spacing;
   }
 }
