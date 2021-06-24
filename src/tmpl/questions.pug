@@ -1,6 +1,6 @@
 section.section-questions
   .section-questions--content
-    p.intro
+    p.intro.regular-bold
       | 8/28，台灣即將舉行核四公投，但你真的了解核四嗎？ <br />
       | 試試下面這個小測驗， 看看核四是否跟你想像中的一樣！
 
@@ -14,10 +14,10 @@ section.section-questions
           each item, i in questions
             li.splide__slide
               div.question.card.question-box(data-answer=`a${item.answer}`)
-                p Q#{i + 1}.#{item.question}
+                p.question.regular-bold Q#{i + 1}.#{item.question}
                 div.option-list
                   each option, j in item.options
-                    label.button(for=`q${i}-a${j}`)
+                    label.button.regular-bold(for=`q${i}-a${j}`)
                       if j === item.answer
                         img(src="../images/question_yes.svg", width="21", height="22")
                       else
@@ -27,8 +27,8 @@ section.section-questions
 
             li.splide__slide
               div.card.answer-detail
-                p.button #{item.options[item.answer]}
-                p #{item.detail}
+                p.button.regular-bold #{item.options[item.answer]}
+                p.regular-bold #{item.detail}
                 if i !== lastIndex
                   div.btn-holder
-                    button.button-black 下一題
+                    button.regular-bold.button-black 下一題
