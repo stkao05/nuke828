@@ -46,6 +46,9 @@ jobs:
       - name: Build page 
         run: npm run build
         
+      - name: Post processing - create font subset
+        run: npm run subfont
+        
       - name: Commit build to gh-page branch
         uses: EndBug/add-and-commit@v7 # You can change this to use a specific version
         with:
