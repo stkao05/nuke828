@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel ./src/tmpl/index.pug --out-dir dist-dev",
     "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
-    "subfont": "subfont ./docs/index.html -o ./docs"
+    "subfont": "subfont ./docs/index.html -o ./docs --no-fallbacks"
   },
   "author": "",
   "license": "ISC",
