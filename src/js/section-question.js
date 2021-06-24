@@ -54,13 +54,11 @@ function mountQuestionBox() {
     const answer = box.getAttribute("data-answer");
 
     const handleAnswerSelect = (event) => {
-      const correctOption = box.querySelector(`input[value=${answer}]`)
-        .parentElement;
-
+      const correctOption = box.querySelector(`button[data-value=${answer}]`);
       correctOption.classList.add("button-green");
 
       if (event.target.value !== answer) {
-        event.target.parentElement.classList.add("button-red");
+        event.target.classList.add("button-red");
       }
 
       setTimeout(() => {
@@ -68,8 +66,8 @@ function mountQuestionBox() {
       }, 700);
     };
 
-    const radios = toArray(box.querySelectorAll("input[type=radio]"));
-    radios.forEach((elm) => elm.addEventListener("change", handleAnswerSelect));
+    const buttons = toArray(box.querySelectorAll(".option-list-item"));
+    buttons.forEach((elm) => elm.addEventListener("click", handleAnswerSelect));
   }
 
   document.querySelectorAll(".question-box").forEach((elm) => mount(elm));
