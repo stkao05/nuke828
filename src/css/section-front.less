@@ -279,8 +279,9 @@
 
 .section-front--platform-link {
   position: absolute;
-  top: @spacing;
-  right: @spacing;
+  top: @spacing * 0.5;
+  right: @spacing * 0.5;
+  font-size: 12px;
 
   color: black;
   text-decoration: none;
@@ -296,7 +297,7 @@
   }
 }
 
-@media @desktop {
+@media (orientation: landscape) {
   .section-front {
     padding: @spacing;
 
@@ -339,5 +340,13 @@
         }
       }
     }
+  }
+}
+
+@media @wide {
+  .section-front--platform-link {
+    .h2();
+    top: @spacing;
+    right: @spacing;
   }
 }
