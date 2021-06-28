@@ -28,6 +28,8 @@ section.section-questions
               div.card.answer-detail
                 p.button.regular-bold #{item.options[item.answer]}
                 p.regular-bold #{item.detail}
-                if i !== lastIndex
-                  div.btn-holder
-                    button.button-next-quetion.regular-bold.button-black 下一題
+                div.btn-holder
+                  if i === lastIndex
+                      a.button-next-section.regular-bold.button-black(href="#section-reasons") 為何不該續建核四
+                  else
+                      button.button-next-quetion.regular-bold.button-black 下一題
