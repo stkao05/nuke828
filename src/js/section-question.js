@@ -12,25 +12,15 @@ function mountSlider() {
   }).mount();
 
   // focus control: only allow focus of active slide
-  const nextButtons = sliderElm.querySelectorAll(".button-next-quetion");
-  const optionItems = sliderElm.querySelectorAll(".option-list-item");
+  const focusableItems = sliderElm.querySelectorAll("button, a");
 
   slider.on("active", (data) => {
     const activeSlide = data.slide;
 
-    nextButtons.forEach((button) => {
-      button.setAttribute("tabindex", "-1");
-    });
-
-    const nextBtn = activeSlide.querySelector(".button-next-quetion");
-    if (nextBtn) {
-      nextBtn.setAttribute("tabindex", "0");
-    }
-
-    optionItems.forEach((item) => {
+    focusableItems.forEach((item) => {
       item.setAttribute("tabindex", "-1");
     });
-    activeSlide.querySelectorAll(".option-list-item").forEach((item) => {
+    activeSlide.querySelectorAll("button, a").forEach((item) => {
       item.setAttribute("tabindex", "0");
     });
   });
