@@ -57,13 +57,15 @@ function mountQuestionBox() {
       const correctOption = box.querySelector(`button[data-value=${answer}]`);
       correctOption.classList.add("button-green");
 
-      if (event.target.value !== answer) {
+      const selectedAnswer = event.target.getAttribute("data-value");
+
+      if (selectedAnswer !== answer) {
         event.target.classList.add("button-red");
       }
 
       setTimeout(() => {
         forwardSlider();
-      }, 700);
+      }, 1000);
     };
 
     const buttons = toArray(box.querySelectorAll(".option-list-item"));
