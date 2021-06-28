@@ -30,6 +30,8 @@ section.section-questions
                 p.regular-bold #{item.detail}
                 div.btn-holder
                   if i === lastIndex
-                      a.button-next-section.regular-bold.button-black(href="#section-reasons") 為何不該續建核四
+                      a.button-next-section.regular-bold.button-black(href="#section-reasons")
+                        include ../images/down_arror.svg
+                        | 為何不該續建核四
                   else
                       button.button-next-quetion.regular-bold.button-black 下一題
