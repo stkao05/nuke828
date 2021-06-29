@@ -1,5 +1,10 @@
+const knowledges = require("./src/content/section-knowledge-modal");
+const pugjs = require("pug");
+
 module.exports = {
   locals: {
+    pugjs,
+    knowledges,
     questions: [
       {
         question: "台灣位於地震帶，核四跟斷層的關係是？",
@@ -51,7 +56,7 @@ module.exports = {
           "核電目前佔全台發電比例僅約10%。 核電廠狀況：核一：除役中。核二、核三：運轉中，2025年前除役。核四：封存中。",
       },
     ],
-    knowledges: [
+    reasons: [
       {
         header: "核四不能用！",
         detail:
