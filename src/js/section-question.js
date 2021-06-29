@@ -19,8 +19,8 @@ function mountSlider() {
 
     // at this point slide still has tabindex=-1 (due to Splide implementation)
     // so we explicitly set here so that we can focus()
-    activeSlide.setAttribute("tabindex", "-1");
-    activeSlide.focus();
+    //activeSlide.setAttribute("tabindex", "-1");
+    //activeSlide.focus();
 
     focusableItems.forEach((item) => {
       item.setAttribute("tabindex", "-1");
