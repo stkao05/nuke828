@@ -1,10 +1,10 @@
 section.section-knowledges
-  h1.h1 能源知識大補帖
+  h2.h1 能源知識大補帖
 
   each item in knowledges
     div.section-knowledges--card
       div.section-knowledges--card-content
-        h2.h2 #{item.heading}
+        h3.h2 #{item.heading}
         ul
           each s in item.summary
             li #{s}
