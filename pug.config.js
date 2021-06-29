@@ -96,16 +96,16 @@ h3 核四10年內都不可能發電
 p 核四如果要重啟，必須重新申請建照、重做環差、找零件、找廠商，還必須因應新發現的S斷層，重作耐震安全設計，必須符合福島核災後，更嚴格的國際核安標準。 經濟部預估還要7+N年、追加800億元，原能會則估計至少要等10年。 簡言之，就算今年公投通過重啟核四，未來10年內核四也不可能發電，更不可能減污減碳。要求用核四來解決眼前的空污跟電力問題，就是請鬼拿藥單。 
 
 p 延伸閱讀：
-  a(href="https://www.aec.gov.tw/share/file/regulation/Aescx996wXYPrJqNEixEHw__.pdf") 原能會網站
+  <a href="https://www.aec.gov.tw/share/file/regulation/Aescx996wXYPrJqNEixEHw__.pdf" target="_blank" rel="noopener">原能會網站</a>
 
 h3 核四對減污減碳的貢獻低
 p 中興大學莊秉潔教授與趙家緯博士曾分析當前政府的「非核減煤」政策與馬前總統「以核養綠」模式的減污減煤效益，結果發現：讓核一、核二、核三、核四都繼續運轉的以核養綠模式，其電力系統的空氣污染物排放量達到91,070噸PM2.5當量，而當前政府非核減煤的能源轉型情境下，則僅有68,204噸PM2.5當量，比前者少了25%。
 
-p 參考資料：<a href="https://reurl.cc/4adV5K">核能無法減煤　轉型才是正道</a>
+p 參考資料：<a href="https://reurl.cc/4adV5K" target="_blank" rel="noopener">核能無法減煤　轉型才是正道</a>
 
 p 台大風險中心也曾分析馬政府「穩健檢核」的減碳效益，也就是讓核四商轉、核一、核二、核三如期除役的情境下，年碳排放量達1.41億噸，反觀蔡政府的「非核家園」年排碳量僅有1.38億噸。
 
-p 參考資料：<a href="https://reurl.cc/NrlKa6">用核電就能減碳？台大風險中心計算 馬政府核四商轉 碳排放仍高過非核家園</a> 
+p 參考資料：<a href="https://reurl.cc/NrlKa6" target="_blank" rel="noopener">用核電就能減碳？台大風險中心計算 馬政府核四商轉 碳排放仍高過非核家園</a> 
 
 p 不用靠核電，一樣能達到減污、減煤、減碳的效果。把續蓋核四的800億拿來深化節能或發展再生能源，才是明智之舉。
 
@@ -113,9 +113,9 @@ h3 核四反而會增加停電風險
 p 2021年5月的兩次停電都是調度管理出問題。513停電的原因是因為人為操作疏失，導致電網斷開，電送不出來。517停電的原因：低估用電需求、電力調度管理失當、電廠歲修排程預估失誤，加上核煤機組失靈，導致電力供不應求。 所以若不解決輸配端的調度管理問題，就算重啟核四，一樣可能會停電！ 而萬一核四供電期間突然故障，或電網事故導致核四急停跳脫，台灣面臨的風險，恐怕就不只是分區限電一天的問題了。一來可能有核安問題，二來核反應爐從啟動到滿載至少要3天才能恢復供電，反而增加停電時間及提高系統負擔的風險，讓供電更不可靠。
 
 p 延伸閱讀：
-  a(href="https://www.twreporter.org/a/opinion-2021-may-power-cut") 不要再有下一次停電，我們該做什麼？
+  <a href="https://www.twreporter.org/a/opinion-2021-may-power-cut" target="_blank" rel="noopener">不要再有下一次停電，我們該做什麼？</a>
 p 延伸閱讀：
-  a(href="https://pansci.asia/archives/146001") 815全台大停電，你搞清楚發生什麼事了嗎？
+  <a href="https://pansci.asia/archives/146001" target="_blank" rel="noopener">815全台大停電，你搞清楚發生什麼事了嗎？</a>
 `,
       },
       {
@@ -134,7 +134,7 @@ h3 核電廠善後遙遙無期
 
 p 前奇異能源核能顧問佐藤曉指出，現行的福島第一核電廠的除役計畫在30至40年間根本難以完成，更不可能將現址恢復為綠地。原因在於反應爐內外殘留的數百噸核燃料殘骸難以取出，即便成功取出核燃料棒碎片，也必須應該永久存放在現場。福島第一核電廠正朝向長期核廢料貯存場的方向進行善後處理。
 
-p 延伸閱讀：<a href="https://www.greenpeace.org/taiwan/press/23769/%E7%A6%8F%E5%B3%B6%E5%8D%81%E5%B9%B4%E6%A0%B8%E7%81%BD%E8%99%95%E7%90%86%E7%84%A1%E6%9C%9F%E3%80%80%E7%B6%A0%E8%89%B2%E5%92%8C%E5%B9%B3%E7%9B%BC%E6%9C%9B%E8%87%BA%E7%81%A3%E5%B9%B3%E5%AE%89%E7%B5%82/">福島十年核災處理無期　綠色和平盼望臺灣平安終結核電</a>
+p 延伸閱讀：<a href="https://www.greenpeace.org/taiwan/press/23769/%E7%A6%8F%E5%B3%B6%E5%8D%81%E5%B9%B4%E6%A0%B8%E7%81%BD%E8%99%95%E7%90%86%E7%84%A1%E6%9C%9F%E3%80%80%E7%B6%A0%E8%89%B2%E5%92%8C%E5%B9%B3%E7%9B%BC%E6%9C%9B%E8%87%BA%E7%81%A3%E5%B9%B3%E5%AE%89%E7%B5%82/" target="_blank" rel="noopener">福島十年核災處理無期　綠色和平盼望臺灣平安終結核電</a>
 
 h3 土地輻射汙染成棘手難題
 
@@ -146,7 +146,7 @@ h3 百萬噸輻射廢水將排入大海
 
 p 福島核災十年後，電廠內大量高熱、高放射性的核燃料仍須持續灌水冷卻，使得上百萬噸超高濃度放射性物質的輻射污水無處可去，每天以140公噸的速度持續增加。這些核污水透過過濾裝置去除氚以外的輻射物質後，被暫存在核電廠區。截至2021年3月，核電廠區已有1061座儲存槽，預料2022年就將全滿。 日本政府採取成本較低廉的做法，決定將這些污水排放至大海，引發日本居民、地方漁民以及許多國家與環境組織的反對聲浪。他們質疑核廢水的放射性物質含量低於國際安全值上限，也不代表沒有汙染與風險，無法證實對海洋生態沒有長期影響。
 
-p 延伸閱讀：<a href="https://www.rfi.fr/cn/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E7%92%B0%E5%A2%83%E8%88%87%E7%99%BC%E5%B1%95/20210423-%E6%B3%95%E5%9C%8B%E5%B0%88%E5%AE%B6%E8%A9%95%E6%97%A5%E6%9C%AC%E5%90%91%E5%A4%A7%E6%B5%B7%E6%8E%92%E6%94%BE%E6%A0%B8%E5%BB%A2%E6%B0%B4%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88%E5%9C%8B%E9%9A%9B%E6%85%A3%E4%BE%8B">法國專家評日本向大海排放核廢水是否符合國際慣例</a>
+p 延伸閱讀：<a href="https://www.rfi.fr/cn/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E7%92%B0%E5%A2%83%E8%88%87%E7%99%BC%E5%B1%95/20210423-%E6%B3%95%E5%9C%8B%E5%B0%88%E5%AE%B6%E8%A9%95%E6%97%A5%E6%9C%AC%E5%90%91%E5%A4%A7%E6%B5%B7%E6%8E%92%E6%94%BE%E6%A0%B8%E5%BB%A2%E6%B0%B4%E6%98%AF%E5%90%A6%E7%AC%A6%E5%90%88%E5%9C%8B%E9%9A%9B%E6%85%A3%E4%BE%8B" target="_blank" rel="noopener">法國專家評日本向大海排放核廢水是否符合國際慣例</a>
 
 h3 上萬居民仍在外避難
 
@@ -156,9 +156,9 @@ h3 福島災後甲狀腺癌比例激增
 
 p 日本「國立癌症中心」癌症預防暨檢查研究中心主任津金昌一郎博士在2014年就指出，該年福島未成年甲狀腺癌在核災後的患者數為194人，大約是2010年的60倍。 核災十周年至今，經診斷為惡性腫瘤或疑似甲狀腺惡性腫瘤的人數增加到237人。日本醫學期刊《Medicine》於2019年的研究中也指出：「2011年6月福島縣59個行政區的平均輻射劑量率，與2011年10月至2016年3月間的甲狀腺癌檢出率，具有統計顯著性。 」
 
-p 延伸閱讀：<a href="https://opinion.udn.com/opinion/story/10481/3450804"> 福島・現在（三）：因無知而恐懼？核災後的病變疑慮</a>
+p 延伸閱讀：<a href="https://opinion.udn.com/opinion/story/10481/3450804" target="_blank" rel="noopener"> 福島・現在（三）：因無知而恐懼？核災後的病變疑慮</a>
 
-p 參考資料：<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6750239/pdf/medi-98-e17165.pdf"> Association between the detection rate of thyroid cancer and the external radiation dose-rate after the nuclear power plant accidents in Fukushima, Japan </a>
+p 參考資料：<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6750239/pdf/medi-98-e17165.pdf" target="_blank" rel="noopener"> Association between the detection rate of thyroid cancer and the external radiation dose-rate after the nuclear power plant accidents in Fukushima, Japan </a>
         `,
       },
       {
@@ -189,7 +189,7 @@ h3 再生能源發電量超越核電
 p 再生能源（不含水力）在2019年時，貢獻了全球10.39%的發電量，超越核電的10.35%。以新增發電量來看，2019年時再生能源新增的裝置容量達到184GW，創下歷史新高，風力發電量新增59.2GW，年增率為13%，太陽光電新增了98GW發電量，年增率為24%。相較之下，核能發電的淨成長僅為2.4GW，年增率為3.7%，且有一半來自於中國。
 
 p 參考資料：
-  a(href="https://www.worldnuclearreport.org/-World-Nuclear-Industry-Status-Report-2020-.html") 《2020世界核能產業現狀報告》(The World Nuclear Industry Status Report 2020)　
+  <a href="https://www.worldnuclearreport.org/-World-Nuclear-Industry-Status-Report-2020-.html" target="_blank" rel="noopener"> 《2020世界核能產業現狀報告》(The World Nuclear Industry Status Report 2020)</a>
           `,
       },
       {
@@ -227,7 +227,7 @@ p 蘋果、Google、台積電等知名企業都已加入RE100聯盟，承諾使�
 h3 再生能源才能降燃煤 
 p 台灣的電力主要來自燃煤，而2025年後就沒有核電可以使用，如果要減煤，就必須增加燃氣或再生能源。由於燃氣發電量受天然氣接收站可卸收量影響而有上限，如果想減更多煤，就必須發展更多再生能源。
 
-p 延伸閱讀：<a href="https://www.cet-taiwan.org/info/story/3825">綠電發展勢在必行　光電爭議如何解決？</a>
+p 延伸閱讀：<a href="https://www.cet-taiwan.org/info/story/3825" target="_blank" rel="noopener">綠電發展勢在必行　光電爭議如何解決？</a>
 
 h3 天然氣是適合的過渡能源
 
@@ -237,11 +237,11 @@ p 1.能與再生能源配合：燃氣電力可以在3小時內快速升降載，
 
 p 2.空污跟排碳比燃煤更少：燃氣排放的PM2.5、硫氧化物只有傳統燃煤的2~4%，氮氧化物與二氧化碳也不到四成。依據台電的估算，火力電廠在2025年雖會比2017年發更多電，但卻會減少3,000萬噸碳排及3.5萬噸空污，正是因為燃氣增加、燃煤減少了。
 
-p 延伸閱讀：<a href="https://medium.com/%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E6%96%87%E6%91%98/%E7%87%83%E6%B0%A3%E8%A8%AD%E6%96%BD%E5%9C%A8%E5%8F%B0%E7%81%A3%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E5%80%8B%E9%9A%8E%E6%AE%B5%E6%80%A7%E4%BB%BB%E5%8B%99-2515b664dafa">燃氣設施在台灣能源轉型中的三個階段性任務</a>
+p 延伸閱讀：<a href="https://medium.com/%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E6%96%87%E6%91%98/%E7%87%83%E6%B0%A3%E8%A8%AD%E6%96%BD%E5%9C%A8%E5%8F%B0%E7%81%A3%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E5%80%8B%E9%9A%8E%E6%AE%B5%E6%80%A7%E4%BB%BB%E5%8B%99-2515b664dafa" target="_blank" rel="noopener">燃氣設施在台灣能源轉型中的三個階段性任務</a>
 
-p 參考資料：<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E6%A0%B8%E8%83%BD%E9%9B%BB%E5%BB%A0%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99--3_19.html">原能會核電廠基本資料</a>、<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E5%8E%9F%E9%BE%8D%E9%96%80%E9%9B%BB%E5%BB%A0%E7%AE%A1%E5%88%B6%E5%B0%88%E5%8D%80--3_4622.html">原能會核四廠管制專區</a>
+p 參考資料：<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E6%A0%B8%E8%83%BD%E9%9B%BB%E5%BB%A0%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99--3_19.html" target="_blank" rel="noopener">原能會核電廠基本資料</a>、<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E5%8E%9F%E9%BE%8D%E9%96%80%E9%9B%BB%E5%BB%A0%E7%AE%A1%E5%88%B6%E5%B0%88%E5%8D%80--3_4622.html" target="_blank" rel="noopener">原能會核四廠管制專區</a>
 
-p 參考資料：<a href="https://www.there100.org/">RE100官網</a>、<a href="https://esg.tsmc.com/csr/ch/resources/documents.html">台積電CSR報告</a>
+p 參考資料：<a href="https://www.there100.org/" target="_blank" rel="noopener">RE100官網</a>、<a href="https://esg.tsmc.com/csr/ch/resources/documents.html" target="_blank" rel="noopener">台積電CSR報告</a>
           `,
       },
       {
@@ -283,7 +283,7 @@ P 每天下午1點至下午3點往往是用電高峰，在這段時間裡，住�
 
 P 平均而言，冷氣佔居家用電的27.86％，夏天時則會飆升至47.11％，尤其是出廠超過十年的老舊冷氣，能耗更是一級能效冷氣的2.5倍，也可透過更換家中老舊冷氣，為節能減碳盡一份力。
 
-p 參考資料：<a href="https://www.reuters.com/article/us-global-climate-carbon-business-trfn-idUSKBN2BF2ZX">Net-zero emissions targets adopted by one-fifth of world's largest companies</a>
+p 參考資料：<a href="https://www.reuters.com/article/us-global-climate-carbon-business-trfn-idUSKBN2BF2ZX" target="_blank" rel="noopener">Net-zero emissions targets adopted by one-fifth of world's largest companies</a>
           `,
       },
     ],
