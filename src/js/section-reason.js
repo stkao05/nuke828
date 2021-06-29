@@ -11,7 +11,10 @@ export function mountSectionReason() {
 
   let heroContainer = document.querySelector(".section-reasons--hero");
 
-  reasonSlider.on("moved", () => {
+  reasonSlider.on("active", (data) => {
+    data.slide.setAttribute("tabindex", "-1");
+    data.slide.focus();
+
     const { index } = reasonSlider;
     heroContainer.setAttribute("data-hero-display", index);
   });
