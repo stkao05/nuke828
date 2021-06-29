@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/tmpl/index.pug --out-dir dist-dev",
+    "dev": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir dist-dev",
     "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
     "subfont": "subfont ./docs/index.html -o ./docs --no-fallbacks"
   },
@@ -12,9 +12,15 @@
   "license": "ISC",
   "devDependencies": {
     "less": "^4.1.1",
+    "nodemon": "^2.0.7",
     "parcel-bundler": "^1.12.5",
     "pug": "^3.0.2",
     "subfont": "^6.1.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "dist-dev"
+    ]
   },
   "dependencies": {
     "@stkao05/layout-grid": "^0.0.2",
