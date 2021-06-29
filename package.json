@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir dist-dev",
+    "dev": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir ./.dev",
     "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
+    "validate": "html-validate docs/index.html",
+    "validate-dev": "html-validate docs/index.html",
     "subfont": "subfont ./docs/index.html -o ./docs --no-fallbacks"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "html-validate": "^5.0.2",
     "less": "^4.1.1",
     "nodemon": "^2.0.7",
     "parcel-bundler": "^1.12.5",
@@ -19,7 +22,7 @@
   },
   "nodemonConfig": {
     "ignore": [
-      "dist-dev"
+      "./dev"
     ]
   },
   "dependencies": {
