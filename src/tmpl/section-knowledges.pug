@@ -8,8 +8,8 @@ section.section-knowledges
         ul
           each s in item.summary
             li #{s}
-        div.button(type="button").container
-          button(type="button").button-black.small(data-micromodal-trigger=`${item.modalId}`) 點我看更多
+        div.button-container
+          button.button-black.small(type="button", data-micromodal-trigger=`${item.modalId}`) 點我看更多
 
       div.img-container
         img(src=`${item.picture}`, width="1000", height="618", alt="")
