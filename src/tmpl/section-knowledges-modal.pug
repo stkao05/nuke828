@@ -1,10 +1,10 @@
 each item in knowledges
   div.modal.modal-slide(aria-hidden="true", id=`${item.modalId}`)
     div.modal__overlay(tabindex="-1" data-micromodal-close)
-    div.modal__container(role="dialog" aria-modal="true" aria-labelledby=`${item.modalId}`)
+    div.modal__container(role="dialog" aria-modal="true" aria-labelledby=`${item.modalId}--title`)
       header
-        h2.hidden(id=`${item.modalId}`) #{item.heading}
-        button.button-close.modal__close(aria-label="關閉" data-micromodal-close)
+        h2.hidden(id=`${item.modalId}--title`) #{item.heading}
+        button(type="button").button-close.modal__close(aria-label="關閉" data-micromodal-close)
           img(src="../images/icon_close.svg", width="28", height="27", alt="")
 
         - html = pugjs.render(item.article)

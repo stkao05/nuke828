@@ -15,7 +15,7 @@ section.section-questions
                 p.question.regular-bold Q#{i + 1}.#{item.question}
                 div.option-list
                   each option, j in item.options
-                    button.option-list-item.button.regular-bold(data-value=`a${j}`)
+                    button(type="button").option-list-item.button.regular-bold(data-value=`a${j}`)
                       if j === item.answer
                         img(src="../images/question_yes.svg", width="21", height="22", alt="")
                       else
@@ -24,7 +24,7 @@ section.section-questions
 
             li.splide__slide
               div.card.answer-detail
-                p.button.regular-bold #{item.options[item.answer]}
+                p.button(type="button").regular-bold #{item.options[item.answer]}
                 p.regular-bold #{item.detail}
                 div.btn-holder
                   if i === lastIndex
@@ -32,4 +32,4 @@ section.section-questions
                         include ../images/down_arrow.svg
                         | 為何不該續建核四
                   else
-                      button.button-next-quetion.regular-bold.button-black 下一題
+                      button(type="button").button-next-quetion.regular-bold.button-black 下一題
