@@ -1,10 +1,10 @@
 each item in articles
-  div.modal.modal-slide(aria-hidden="true", id=`${item.id}`)
+  div.modal.modal-slide.article-modal(aria-hidden="true", id=`${item.id}`)
     div.modal__overlay(tabindex="-1" data-micromodal-close)
     div.modal__container(role="dialog" aria-modal="true" aria-labelledby=`${item.id}--title`)
-      header
-        button(type="button").button-close.modal__close(aria-label="關閉" data-micromodal-close)
-          img(src="../images/icon_close.svg", width="28", height="27", alt="")
+      button(type="button").button-close.modal__close(aria-label="關閉" data-micromodal-close)
+        img(src="../images/icon_close.svg", width="28", height="27", alt="")
 
-        - html = pugjs.render(item.content)
-        div !{ html }
+      - html = pugjs.render(item.content)
+      div !{ html }
+      button.next-article-button(data-micromodal-trigger=`${nextArticleId(item.id)}`) 下一章

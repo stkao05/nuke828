@@ -5,6 +5,10 @@ module.exports = {
   locals: {
     articles,
     pugjs,
+    nextArticleId: (id) => {
+      const num = parseInt(id.replace("article-", ""));
+      return `article-${num + 1}`;
+    },
     questions: [
       {
         question: "台灣位於地震帶，核四跟斷層的關係是？",
@@ -133,7 +137,10 @@ module.exports = {
         heading: "台灣如何因應氣候危機？",
         picture: "../images/knowledges_climate.jpg",
         summary: [
-          { summary: "除了吵著蓋核電廠，還可以做什麼？", articleId: "article-17" },
+          {
+            summary: "除了吵著蓋核電廠，還可以做什麼？",
+            articleId: "article-17",
+          },
           { summary: "製造業部門低碳轉型", articleId: "article-18" },
           { summary: "綠色人本交通運輸", articleId: "article-19" },
           { summary: "住商節能", articleId: "article-20" },
