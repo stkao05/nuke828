@@ -6,10 +6,10 @@ section.section-knowledges
       div.section-knowledges--card-content
         h3.h2 #{item.heading}
         ul
-          each s in item.summary
-            li #{s}
-        div.button-container
-          button.button-black.small(type="button", data-micromodal-trigger=`${item.modalId}`) 點我看更多
+          each summary in item.summary
+            li 
+              button.button-reset.small(type="button", data-micromodal-trigger=`${summary.articleId}`) #{summary.summary}
+              
 
       div.img-container
         img(src=`${item.picture}`, width="1000", height="618", alt="")
