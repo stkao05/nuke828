@@ -55,6 +55,12 @@ const ModalManager = {
     }
 
     MicroModal.show(id, modalOption);
+
+    // when an modal has been opened and scrolled, we want to reset
+    // the scroll position when it is re-opened
+    const modal = document.querySelector(`#${id}`);
+    modal.scrollTo(0, 0);
+
     this.modalId = id;
   },
   close() {
