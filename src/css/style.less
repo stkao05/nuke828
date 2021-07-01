@@ -174,6 +174,26 @@ a {
   }
 }
 
+.button-yellow {
+  background: @c-yellow;
+  color: @c-black;
+  padding: 0.5em 1.5em;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background: @c-grey;
+    color: white;
+  }
+
+  &:focus-visible {
+    outline: 4px solid @c-grey;
+  }
+}
+
+
 a:focus-visible {
   border: 4px solid @c-grey;
 }

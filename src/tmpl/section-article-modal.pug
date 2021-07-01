@@ -7,4 +7,5 @@ each item in articles
 
       - html = pugjs.render(item.content)
       div !{ html }
-      button.next-article-button(data-micromodal-trigger=`${nextArticleId(item.id)}`) 下一章
+      div.modal__button-container
+        button.next-article-button.button-yellow(data-micromodal-trigger=`${nextArticleId(item.id)}`) 下一章
