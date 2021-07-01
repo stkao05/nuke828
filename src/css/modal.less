@@ -42,6 +42,10 @@
   top: -20px;
   right: -10px;
 
+  &:focus {
+    outline: none; // safari will show focus ring when the element was called focus()
+  }
+
   &:focus-visible {
     outline: 4px solid @c-grey;
   }
