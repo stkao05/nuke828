@@ -8,7 +8,9 @@ section.section-knowledges
         ul
           each summary in item.summary
             li 
-              button.button-reset.small(type="button", data-micromodal-trigger=`${summary.articleId}`) #{summary.summary}
+              button.button-reset.small(type="button", data-micromodal-trigger=`${summary.articleId}`) 
+                span #{summary.summary}
+                img(src="../images/icon_plus.svg")
               
 
       div.img-container
