@@ -67,6 +67,7 @@
   }
   .modal__container {
     min-height: 100vh;
+    width: 100vw;
   }
 
   .modal__close {
@@ -131,19 +132,6 @@
 
 .modal-slide[aria-hidden="true"] .modal__overlay {
   animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
-}
-
-/*.modal-slide[aria-hidden="true"] .modal__container {*/
-/*animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);*/
-/*}*/
-
-/*.modal-slide[aria-hidden="false"] .modal__container {*/
-/*animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);*/
-/*}*/
-
-.modal-slide .modal__container,
-.modal-slide .modal__overlay {
-  will-change: transform;
 }
 
 .micromodal-skip-animation {
