@@ -56,7 +56,10 @@
   color: rgba(0, 0, 0, 0.8);
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (max-width: 800px) and (orientation: portrait) {
+  .modal {
+    padding: 0;
+  }
   .modal__container {
     min-height: 100vh;
   }
