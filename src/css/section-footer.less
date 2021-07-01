@@ -8,8 +8,8 @@ footer {
     max-width: 700px;
     display: inline-grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
     row-gap: @spacing;
+    align-items: start;
     column-gap: @spacing;
   }
 
@@ -18,6 +18,21 @@ footer {
     line-height: initial;
     margin: 0;
     white-space: nowrap;
+  }
+
+  a.fb-link {
+    color: @color-font-black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      margin-right: 5px;
+    }
   }
 
   p {
@@ -29,21 +44,6 @@ footer {
     img {
       height: 1.5em;
       vertical-align: center;
-    }
-
-    a {
-      color: @color-font-black;
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-
-      img {
-        margin-right: 5px;
-      }
     }
   }
 }
@@ -57,6 +57,13 @@ footer {
       grid-template-columns: auto auto auto auto auto auto;
       grid-template-rows: auto;
       column-gap: @spacing;
+    }
+
+    a.fb-link {
+      align-items: flex-start;
+      line-height: initial;
+      overflow: hidden;
+      white-space: pre-line;
     }
   }
 }
