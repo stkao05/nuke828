@@ -7,5 +7,7 @@ each item in articles
 
       - html = pugjs.render(item.content)
       div !{ html }
-      div.modal__button-container
-        button.next-article-button.button-yellow(type="button", data-micromodal-trigger=`${nextArticleId(item.id)}`, data-micromodal-skip-animation="") 下一章
+
+      if !item.last
+        div.modal__button-container
+          button.next-article-button.button-yellow(type="button", data-micromodal-trigger=`${nextArticleId(item.id)}`, data-micromodal-skip-animation="") 下一章
