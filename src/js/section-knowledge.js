@@ -9,7 +9,7 @@ export function mountSectionKnowledge() {
 
 const modalOption = {
   disableScroll: true,
-  disableFocus: true,
+  disableFocus: false,
   openTrigger: "none",
   closeTrigger: "none",
 };
