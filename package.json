@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir ./.dev",
+    "dev2": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir ./.dev",
+    "dev": "parcel ./src/tmpl/index.pug --out-dir ./.dev",
     "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
     "validate": "html-validate docs/index.html",
     "validate-dev": "html-validate ./.dev/index.html",
@@ -27,6 +28,7 @@
   },
   "dependencies": {
     "@stkao05/layout-grid": "^0.0.2",
+    "delegated-events": "^1.1.2",
     "micromodal": "^0.4.6"
   }
 }

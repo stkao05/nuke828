@@ -71,8 +71,8 @@
 
   .modal__close {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
   }
 }
 
@@ -134,4 +134,11 @@
 .modal-slide .modal__container,
 .modal-slide .modal__overlay {
   will-change: transform;
+}
+
+.micromodal-skip-animation {
+  .modal-slide[aria-hidden="false"] .modal__overlay,
+  .modal-slide[aria-hidden="true"] .modal__overlay {
+    animation: none;
+  }
 }

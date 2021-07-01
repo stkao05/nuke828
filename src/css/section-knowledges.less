@@ -7,6 +7,7 @@
   ul {
     padding-left: 1em;
     list-style: none;
+    padding: 0;
 
     li {
       margin-bottom: 1em;
@@ -19,7 +20,12 @@
         align-items: center;
         width: 100%;
 
+        span {
+          pointer-events: none;
+        }
+
         img {
+          pointer-events: none;
           background: black;
           color: white;
           height: 20px;
