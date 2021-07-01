@@ -10,13 +10,9 @@ p 核四如果要重啟，必須重新申請建照、重做環差、找零件、
     id: "article-2",
     content: `
 h3 核四對減污減碳的貢獻低
-p 中興大學莊秉潔教授與趙家緯博士曾分析當前政府的「非核減煤」政策與馬前總統「以核養綠」模式的減污減煤效益，結果發現：讓核一、核二、核三、核四都繼續運轉的以核養綠模式，其電力系統的空氣污染物排放量達到91,070噸PM2.5當量，而當前政府非核減煤的能源轉型情境下，則僅有68,204噸PM2.5當量，比前者少了25%。
+p 中興大學莊秉潔教授與趙家緯博士曾分析當前政府的「非核減煤」政策與馬前總統「以核養綠」模式的減污減煤效益，結果發現：讓核一、核二、核三、核四都繼續運轉的以核養綠模式，其電力系統的空氣污染物排放量達到91,070噸PM2.5當量，而當前政府非核減煤的能源轉型情境下，則僅有68,204噸PM2.5當量，比前者少了25%。(<a href="https://reurl.cc/4adV5K" target="_blank" rel="noopener">參考資料</a>)
 
-p 參考資料：<a href="https://reurl.cc/4adV5K" target="_blank" rel="noopener">核能無法減煤　轉型才是正道</a>
-
-p 台大風險中心也曾分析馬政府「穩健檢核」的減碳效益，也就是讓核四商轉、核一、核二、核三如期除役的情境下，年碳排放量達1.41億噸，反觀蔡政府的「非核家園」年排碳量僅有1.38億噸。
-
-p 參考資料：<a href="https://reurl.cc/NrlKa6" target="_blank" rel="noopener">用核電就能減碳？台大風險中心計算 馬政府核四商轉 碳排放仍高過非核家園</a> 
+p 台大風險中心也曾分析馬政府「穩健檢核」的減碳效益，也就是讓核四商轉、核一、核二、核三如期除役的情境下，年碳排放量達1.41億噸，反觀蔡政府的「非核家園」年排碳量僅有1.38億噸。(<a href="https://reurl.cc/NrlKa6" target="_blank" rel="noopener">參考資料</a>)
 
 p 不用靠核電，一樣能達到減污、減煤、減碳的效果。把續蓋核四的800億拿來深化節能或發展再生能源，才是明智之舉。
         `,
@@ -124,10 +120,7 @@ p 在2009年至2019年間，電廠規模的太陽能成本下降了89%，風能�
     content: `
 h3 再生能源發電量超越核電
 
-p 再生能源（不含水力）在2019年時，貢獻了全球10.39%的發電量，超越核電的10.35%。以新增發電量來看，2019年時再生能源新增的裝置容量達到184GW，創下歷史新高，風力發電量新增59.2GW，年增率為13%，太陽光電新增了98GW發電量，年增率為24%。相較之下，核能發電的淨成長僅為2.4GW，年增率為3.7%，且有一半來自於中國。
-
-p 參考資料：
-  <a href="https://www.worldnuclearreport.org/-World-Nuclear-Industry-Status-Report-2020-.html" target="_blank" rel="noopener"> 《2020世界核能產業現狀報告》(The World Nuclear Industry Status Report 2020)</a>
+p 再生能源（不含水力）在2019年時，貢獻了全球10.39%的發電量，超越核電的10.35%。以新增發電量來看，2019年時再生能源新增的裝置容量達到184GW，創下歷史新高，風力發電量新增59.2GW，年增率為13%，太陽光電新增了98GW發電量，年增率為24%。相較之下，核能發電的淨成長僅為2.4GW，年增率為3.7%，且有一半來自於中國。(<a href="https://www.worldnuclearreport.org/-World-Nuclear-Industry-Status-Report-2020-.html" target="_blank" rel="noopener">參考資料</a>)
 `,
   },
   {
@@ -180,9 +173,9 @@ p 2.空污跟排碳比燃煤更少：燃氣排放的PM2.5、硫氧化物只有�
 
 p 延伸閱讀：<a href="https://medium.com/%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E6%96%87%E6%91%98/%E7%87%83%E6%B0%A3%E8%A8%AD%E6%96%BD%E5%9C%A8%E5%8F%B0%E7%81%A3%E8%83%BD%E6%BA%90%E8%BD%89%E5%9E%8B%E4%B8%AD%E7%9A%84%E4%B8%89%E5%80%8B%E9%9A%8E%E6%AE%B5%E6%80%A7%E4%BB%BB%E5%8B%99-2515b664dafa" target="_blank" rel="noopener">燃氣設施在台灣能源轉型中的三個階段性任務</a>
 
-p 參考資料：<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E6%A0%B8%E8%83%BD%E9%9B%BB%E5%BB%A0%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99--3_19.html" target="_blank" rel="noopener">原能會核電廠基本資料</a>、<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E5%8E%9F%E9%BE%8D%E9%96%80%E9%9B%BB%E5%BB%A0%E7%AE%A1%E5%88%B6%E5%B0%88%E5%8D%80--3_4622.html" target="_blank" rel="noopener">原能會核四廠管制專區</a>
+p 延伸閱讀：<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E6%A0%B8%E8%83%BD%E9%9B%BB%E5%BB%A0%E5%9F%BA%E6%9C%AC%E8%B3%87%E6%96%99--3_19.html" target="_blank" rel="noopener">原能會核電廠基本資料</a>、<a href="https://www.aec.gov.tw/%E6%A0%B8%E8%83%BD%E7%AE%A1%E5%88%B6/%E5%8E%9F%E9%BE%8D%E9%96%80%E9%9B%BB%E5%BB%A0%E7%AE%A1%E5%88%B6%E5%B0%88%E5%8D%80--3_4622.html" target="_blank" rel="noopener">原能會核四廠管制專區</a>
 
-p 參考資料：<a href="https://www.there100.org/" target="_blank" rel="noopener">RE100官網</a>、<a href="https://esg.tsmc.com/csr/ch/resources/documents.html" target="_blank" rel="noopener">台積電CSR報告</a>
+p 延伸閱讀：<a href="https://www.there100.org/" target="_blank" rel="noopener">RE100官網</a>、<a href="https://esg.tsmc.com/csr/ch/resources/documents.html" target="_blank" rel="noopener">台積電CSR報告</a>
         `,
   },
   {
@@ -231,9 +224,7 @@ p 包括住宅與服務業在內的「住商部門」，佔台灣碳排放的的
 
 p 每天下午1點至下午3點往往是用電高峰，在這段時間裡，住商的用電貢獻超過五成以上，比工業用戶來得多。因此，住商用戶在用電高峰時節電，可以有效減少發電端的壓力，包括下班關閉電腦、避免在尖峰時間使用耗能家電、關閉不必要的照明設備及待機電力等。
 
-p 平均而言，冷氣佔居家用電的27.86％，夏天時則會飆升至47.11％，尤其是出廠超過十年的老舊冷氣，能耗更是一級能效冷氣的2.5倍，也可透過更換家中老舊冷氣，為節能減碳盡一份力。
-
-p 參考資料：<a href="https://www.reuters.com/article/us-global-climate-carbon-business-trfn-idUSKBN2BF2ZX"article- target="_blank" rel="noopener">Net-zero emissions targets adopted by one-fifth of world's largest companies</a>
+p 平均而言，冷氣佔居家用電的27.86％，夏天時則會飆升至47.11％，尤其是出廠超過十年的老舊冷氣，能耗更是一級能效冷氣的2.5倍，也可透過更換家中老舊冷氣，為節能減碳盡一份力。(<a href="https://www.reuters.com/article/us-global-climate-carbon-business-trfn-idUSKBN2BF2ZX"article- target="_blank" rel="noopener">參考資料</a>)
 `,
   },
 ];
