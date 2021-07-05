@@ -8,9 +8,9 @@
     padding-left: 1em;
     list-style: none;
     padding: 0;
+    margin: 0;
 
     li {
-      margin-bottom: 1em;
       cursor: pointer;
 
       button {
@@ -20,8 +20,23 @@
         align-items: center;
         width: 100%;
 
+        @button-side: 5px;
+        padding: 0.5 * @spacing @button-side;
+        position: relative;
+        left: -1 * @button-side;
+        border-radius: 10px;
+
         &:focus-visible {
           outline: 4px solid @c-grey;
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+          color: black;
+        }
+
+        &:active {
+          background: rgba(0, 0, 0, 0.2);
         }
 
         span {
@@ -70,7 +85,7 @@
     margin: @spacing auto;
 
     .section-knowledges--card-content {
-      padding: @spacing;
+      padding: @spacing @spacing (0.75 * @spacing) @spacing;
     }
 
     .img-container {
