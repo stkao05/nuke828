@@ -4,6 +4,10 @@ export function mountSectionReason() {
   let splide = new Splide(document.querySelector(".section-reasons--slider"), {
     gap: 12,
     arrows: true,
+    i18n: {
+      prev: "前一張",
+      next: "下一張",
+    },
   }).mount();
 
   let heroContainer = document.querySelector(".section-reasons--hero");

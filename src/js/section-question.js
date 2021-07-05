@@ -9,6 +9,10 @@ function mountSlider() {
     gap: 12,
     arrows: false,
     pagination: false,
+    i18n: {
+      prev: "前一張",
+      next: "下一張",
+    },
   }).mount();
 
   // focus control: only allow focus of active slide
