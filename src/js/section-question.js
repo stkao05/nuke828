@@ -1,4 +1,4 @@
-import "./splide.min";
+import "./splide";
 
 let slider;
 

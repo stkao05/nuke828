@@ -1,4 +1,4 @@
-import "./splide.min";
+import "./splide";
 
 export function mountSectionReason() {
   let splide = new Splide(document.querySelector(".section-reasons--slider"), {
