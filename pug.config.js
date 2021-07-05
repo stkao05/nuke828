@@ -6,8 +6,12 @@ module.exports = {
     articles,
     pugjs,
     nextArticleId: (id) => {
-      const num = parseInt(id.replace("article-", ""));
-      return `article-${num + 1}`;
+      id = parseInt(id.replace("article-", ""));
+      return `article-${id + 1}`;
+    },
+    nextArticleTitle: (id) => {
+      id = parseInt(id.replace("article-", ""));
+      return articles[id].title;
     },
     questions: [
       {
@@ -31,8 +35,13 @@ module.exports = {
       {
         question: "台灣位於地震帶，核四跟斷層的關係是？",
         answer: 2,
-        options: ["附近沒有斷層", "20公里外才有斷層", "核四廠區下方與外海皆有斷層"],
-        detail: "中央地調所確認，核四廠區下方有長2公里的S斷層，外海有5條共長90公里的活動斷層",
+        options: [
+          "附近沒有斷層",
+          "20公里外才有斷層",
+          "核四廠區下方與外海皆有斷層",
+        ],
+        detail:
+          "中央地調所確認，核四廠區下方有長2公里的S斷層，外海有5條共長90公里的活動斷層",
       },
       {
         question: "以下哪些事故，在核四興建過程中曾經發生過？",
