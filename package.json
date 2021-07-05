@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev2": "nodemon ./node_modules/.bin/parcel ./src/tmpl/index.pug --out-dir ./.dev",
-    "dev": "parcel ./src/tmpl/index.pug --out-dir ./.dev",
+    "dev": "parcel ./src/tmpl/index.pug --no-cache --out-dir ./.dev",
     "build": "parcel build ./src/tmpl/index.pug --out-dir docs",
     "validate": "html-validate docs/index.html",
     "validate-dev": "html-validate ./.dev/index.html",
