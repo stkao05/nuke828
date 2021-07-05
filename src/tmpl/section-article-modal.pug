@@ -11,4 +11,8 @@ each item in articles
 
       if !item.last
         div.modal__button-container
-          button.next-article-button.button-yellow(type="button", data-micromodal-trigger=`${nextArticleId(item.id)}`, data-micromodal-skip-animation="") #{nextArticleTitle(item.id)}
+          button.next-article-button.button-yellow(type="button", data-micromodal-trigger=`${nextArticleId(item.id)}`, data-micromodal-skip-animation="")  
+            if item.nextButton
+              | #{item.nextButton}
+            else
+              | 下一章
