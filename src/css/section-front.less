@@ -6,7 +6,7 @@
 
 .section-front {
   background: #f9f7ef;
-  height: 100vh;
+  height: calc(100vh - 50px); // typical phone browser will have bottom cover with control
   position: relative;
   overflow: hidden;
 
@@ -307,6 +307,7 @@
 @media (orientation: landscape) {
   .section-front {
     padding: @spacing;
+    height: 100vh;
 
     .section-front-title,
     .section-front-title-bg {
